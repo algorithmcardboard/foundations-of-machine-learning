@@ -1,4 +1,48 @@
 \documentclass{article}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage[T1]{fontenc}
 
 \begin{document}
+
+\title{Foundations of Machine Learning --- Homework Assignment 1}
+\date{October 11, 2015}
+\author{Anirudhan J Rajagopalan\\ N18824115\\ ajr619}
+
+\maketitle
+
+\newpage
+
+\section*{A. PAC Learning}
+\subsection*{1}
+\begin{description}
+  \item[Algorithm \( \mathcal{A} \):] Given a sample \( \mathcal{S} \), Let the algorithm consists of returning the tightest interval I' = \(I_{s}\) containing all points labeled with 1.
+  \item[Error regions:] We define error regions as the intervals that lie between [a,b] but outside I'.
+  \item[Proof of PAC learnability]:\\
+    Let I be the target concept --- [a,b].\\
+    Let \( \epsilon \) > 0 be the error.\\
+    Let m be the number of samples in S.\\
+    Let I\(_{s}\) be the tightest interval formed by the the points labelled 1 from sample S.\\
+    Let Pr\([I_{s}]\) denote the probability mass of the interval defined by I\(_{s}\).\\
+    \centerline{Pr\([I_{s}]\) > \( \epsilon \)}
+
+    Lets assume that the interval I\(_{s}\) (denoted by [a',b']) has error \(\epsilon\).  The error can be found in intervals [a,a') and (b',b] denoted by \(I_{1} and I_{2} \) respectively.  If we assume that the error is equally distributed across the two regions, we can denote the error to be \(\epsilon/2\).  Each point in the error region has a probability of (1-\(\epsilon\)).  So Probability of the error in sample being greater than \(\epsilon \) can be written as
+
+    \begin{align*}
+      \underset{S\sim\mathcal{D}^{m}}{\Pr}[R(I_{S}) > \epsilon] \le & \sum_{i=1}^{2} \underset{S\sim\mathcal{D}^{m}}{\Pr} [{I  \bigcap I_{i} = \emptyset }]\\
+      \le & {2( 1 - \epsilon/2)}^{m} \\
+      \le & 2\mathrm{e}^{-m\epsilon/2}\\
+    \end{align*}
+
+    Equating the RHS to \( \delta \) gives us the sample complexity.
+    \begin{align*}
+      2\mathrm{e}^{-m\epsilon/2} = & \delta\\
+      \frac{2}{\delta} = & \mathrm{e}^{m\epsilon/2} \\
+      \log{\frac{2}{\delta}} = & \frac{m\epsilon}{2} \\
+      m = & \frac{2}{\epsilon} \log{\frac{2}{\delta}}
+    \end{align*}
+
+\end{description}
+
+
 \end{document}
