@@ -49,27 +49,27 @@
       \item If there are p separate sequence of positively labeled points in the training data, then return the union of the p tightest intervals containing the positive points.
       \item Otherwise, return (p - i) tightest intervsals, each containing a sequence of positie labels separfated by i negative labels.  i can take the values 0 to (p -1).
     \end{enumerate}
-  \item[Error intervals:] Let \( [a_{1}, b_{1}] \cup [a_{2}, b_{2}] \cup ... [a_{p}, b_{p}] \) be the target concept C.  Let \( \epsilon > 0\). We can assume that \(\Pr[a_{i}, b_{i}] > \epsilon/(k + 1) \).  The actual error on the training set is gap between the target concept \( [a_{i}, b_{i}]\) and the learned concept \( [a'_{i}, b'_{i}] \).  Each of the error regions \( r_{i}\) can occur with a probability \( \epsilon/2(k + 1) \). (Factor of 2 for \( [a_{i}, a'_{i}] and [b'_{i}, b{i}] \).
+  \item[Error intervals:] Let \( [a_{1}, b_{1}] \cup [a_{2}, b_{2}] \cup ... [a_{p}, b_{p}] \) be the target concept C.  Let \( \epsilon > 0\). We can assume that \(\Pr[a_{i}, b_{i}] > \epsilon/(p + 1) \).  The actual error on the training set is gap between the target concept \( [a_{i}, b_{i}]\) and the learned concept \( [a'_{i}, b'_{i}] \).  Each of the error regions \( r_{i}\) can occur with a probability \( \epsilon/2(p + 1) \). (Factor of 2 for \( [a_{i}, a'_{i}] and [b'_{i}, b{i}] \).
   \item[Proof of PAC learnability]:\\
-    If \( \mathrm{error(h_{S})} > \epsilon\), then either the union of the intervals misses one of the regions \( r_{i} \) or \( \Pr[b_{i}, a_{i+1}] > \epsilon/(k+1)\).  Thus by union bound, we have
+    If \( \mathrm{error(h_{S})} > \epsilon\), then either the union of the intervals misses one of the regions \( r_{i} \) or \( \Pr[b_{i}, a_{i+1}] > \epsilon/(p+1)\).  Thus by union bound, we have
     \begin{align*}
-      \Pr[\mathrm{error(h_{S})}] \le & \Pr[\exists{i} \in [1, p]: h_{S} \; \mathrm{misses} \; r_{i}] + e^{-m\epsilon/(k+1)}\\
-      \le & 2k(1-\frac{\epsilon}{2(k+1)})^{m} + e^{-m\epsilon/(k+1)}\\
-      \le & 2ke^{-m\epsilon/{2(k+1)}} + e^{-m\epsilon/(k+1)}\\
-      \le & (2k+1)e^{-m\epsilon/2(k+1)}
+      \Pr[\mathrm{error(h_{S})}] \le & \Pr[\exists{i} \in [1, p]: h_{S} \; \mathrm{misses} \; r_{i}] + e^{-m\epsilon/(p+1)}\\
+      \le & 2p(1-\frac{\epsilon}{2(p+1)})^{m} + e^{-m\epsilon/(p+1)}\\
+      \le & 2pe^{-m\epsilon/{2(p+1)}} + e^{-m\epsilon/(p+1)}\\
+      \le & (2p+1)e^{-m\epsilon/2(p+1)}
     \end{align*}
 
     Setting \( \delta \) = 0 and solving the RHS will give us a bound for m.
 
     \begin{align}
-      (2k+1)e^{-m\epsilon/2(k+1)} = & \delta\\
-      \frac{2k+1}{\delta} = & e^{m\epsilon/2(k+1)}\\
-      \log{\frac{2k+1}{\delta}} = & \frac{m\epsilon}{2(k+1)}\\
-      m = & \frac{2(k+1)}{\epsilon} \log{\frac{2k+1}{\delta}}
+      (2p+1)e^{-m\epsilon/2(p+1)} = & \delta\\
+      \frac{2p+1}{\delta} = & e^{m\epsilon/2(p+1)}\\
+      \log{\frac{2p+1}{\delta}} = & \frac{m\epsilon}{2(p+1)}\\
+      m = & \frac{2(p+1)}{\epsilon} \log{\frac{2p+1}{\delta}}
     \end{align}
     Therefore, for probability of error to be less than \(\epsilon\) m should be greater than the value obtained in (4).
   \item[When p is 2]:\\
-    Substituting k = 2 in the equation (4) above gives us \(m \ge \frac{6}{\epsilon} \log{\frac{5}{\delta}}\)
+    Substituting p = 2 in the equation (4) above gives us \(m \ge \frac{6}{\epsilon} \log{\frac{5}{\delta}}\)
 
 \end{description}
 
