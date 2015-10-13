@@ -1,6 +1,7 @@
 \documentclass{article}
 \usepackage{lmodern}
 \usepackage{amsmath}
+\usepackage{amssymb}
 \usepackage[T1]{fontenc}
 
 \begin{document}
@@ -67,10 +68,30 @@
       \log{\frac{2p+1}{\delta}} = & \frac{m\epsilon}{2(p+1)}\\
       m = & \frac{2(p+1)}{\epsilon} \log{\frac{2p+1}{\delta}}
     \end{align}
-    Therefore, for probability of error to be less than \(\epsilon\) m should be greater than the value obtained in (4).
+    Therefore, for probability of error to be less than \(\epsilon\) m should be greater than the value obtained in (4) (Sample complexity).
   \item[When p is 2]:\\
-    Substituting p = 2 in the equation (4) above gives us \(m \ge \frac{6}{\epsilon} \log{\frac{5}{\delta}}\)
-
+    Substituting p = 2 in the equation (4) above gives us \(m \ge \frac{6}{\epsilon} \log{\frac{5}{\delta}}\) as the sample complexity.
+  \item[Time complexity]:\\
+    The time complexity is O(p).
 \end{description}
+
+\newpage
+\section*{B. Rademacher complexity, growth function}
+\subsection*{1}
+
+The upper bound on the growth function can be found by finding out the number of dichotomies possible using the given hypothesis set for a given m.  For a given value of \( \theta \), the functions in H can classify either the points to the left of \(\theta\) as `\( + \)' (\( x \mapsto 1_{x \le \theta} : \theta \in \mathbb{R} \)) or as `\( - \)' (\( x \mapsto 1_{x \ge \theta} : \theta \in \mathbb{R} \)).  Similarly H can classify points to the right of \( \theta \) as `\( + \)' or `\( - \)'.
+
+If we have a sample of size \(m\), we have a total of \((m+1)\) ways of classifying the sample.  Each classification can be done in two ways (as seen in the previous paragraph).  Hence we have a total of 2(m+1) ways of classification.  Of these classifications, two classification will be repeated (the one at the extremeties).  So we have to subtract 2 from the total ways of classification.  Hence total ways of classification is \(  2(m+1) - 2 = 2m\).
+\begin{align*}
+  \prod_{H}(m) = & 2m
+\end{align*}
+
+\subsubsection*{Upper bound on \( \mathfrak{R}_{m}(H)\)}
+
+The upper bound is given by 
+\begin{align*}
+  \mathfrak{R}_{m}(H) \le & \sqrt{\frac{2log\prod_{H}(m)}{m}}\\
+  \le & \sqrt{\frac{2log(2m)}{m}}
+\end{align*}
 
 \end{document}
