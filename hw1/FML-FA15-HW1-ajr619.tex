@@ -51,7 +51,7 @@
   \item[Algorithm \( \mathcal{A} \):]  Given a sample \( \mathcal{S}\) for target concept C containing p closed intervals,
     \begin{enumerate}
       \item If there are p separate sequence of positively labeled points in the training data, then return the union of the p tightest intervals containing the positive points.
-      \item Otherwise, return (p - i) tightest intervsals, each containing a sequence of positie labels separfated by i negative labels.  i can take the values 0 to (p -1).
+      \item Otherwise, return (p - i) tightest intervsals, each containing a sequence of positie labels separfated by i negative labels\.  i can take the values 0 to (p -1).
     \end{enumerate}
   \item[Error intervals:] Let \( [a_{1}, b_{1}] \cup [a_{2}, b_{2}] \cup ... [a_{p}, b_{p}] \) be the target concept C.  Let \( \epsilon > 0\). We can assume that \(\Pr[a_{i}, b_{i}] > \epsilon/(p + 1) \).  The actual error on the training set is gap between the target concept \( [a_{i}, b_{i}]\) and the learned concept \( [a'_{i}, b'_{i}] \).  Each of the error regions \( r_{i}\) can occur with a probability \( \epsilon/2(p + 1) \). (Factor of 2 for \( [a_{i}, a'_{i}] and [b'_{i}, b{i}] \).
   \item[Proof of PAC learnability]:\\
@@ -120,5 +120,13 @@ The equations and its explanations are as follows:
 10 --- Since \(sup(f+g) \le sup(f) + sup(g) \)
 
 8, 9, 11, 12 --- Expanding the equation and replacing with Rademacher complexity terms.
+
+The Rademacher complexity is bounded by 
+\begin{align*}
+  \mathfrak{R}_{m}(U) \le &  \hat{\mathfrak{R}_{S}}(U) + \sqrt{\frac{log{\frac{2}{\delta}}}{2m}} \\
+  \le & \hat{\mathfrak{R}_{S}}(C_{1}) + \hat{\mathfrak{R}_{S}}(C_{2}) + \sqrt{\frac{log{\frac{2}{\delta}}}{2m}}
+\end{align*}
+
+This gives the bound for Rademacher complexity of the family U  formed by the intersection of two concepts \( C_{1}\) and \( C_{2} \)
 
 \end{document}
