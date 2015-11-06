@@ -19,5 +19,24 @@
 
 \section*{D. Kernels}
 \subsection*{1}
+\begin{description}
+  \item{Given:} Kernel, K is defined by \(K(x,y) = \sum_{i=1}^{N} \cos^{n} (x_{i}^{2} - y_{i}^{2} )\) for all \((X, Y) \in \mathbb{R}^{N} \times \mathbb{R}^{N} \) 
+  \item{Solution:}  We know that
+    \begin{equation}
+      \cos (x_{i}^{2} - y_{i}^{2}) = \sin (x_{i}^{2}).\sin (y_{i}^{2}) + \cos (x_{i}^{2}).\cos (y_{i}^{2})
+    \end{equation}
+    This can be written as a dot product of two vectors 
+    \begin{align}
+    \phi(x_{i}) = \begin{bmatrix} \cos (x_{i}^{2}) \\ \sin (x_{i}^{2}) \end{bmatrix} && \mathrm{and} &&
+    \phi(y_{i}) = \begin{bmatrix} \cos (y_{i}^{2}) \\ \sin (y_{i}^{2}) \end{bmatrix}
+    \end{align}
+
+    We know that if K can be written as \( \langle \phi(x_{i}), \phi(y_{i}) \rangle \), then it is a PDS@.
+
+    Also, \( \langle \phi(x_{i}), \phi(y_{i}) \rangle \) is a positive scalar.  When a scalar is raised to a positive power (n in our case) and summed with N other positive scalar, we get a positive scalar as our answer.  Hence
+    \begin{equation*}
+      K(x,y) = \sum_{i=1}^{N} \cos^{n} (x_{i}^{2} - y_{i}^{2} ) \mathrm{is PDS.}
+    \end{equation*}
+\end{description}
 
 \end{document}
