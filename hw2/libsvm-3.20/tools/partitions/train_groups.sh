@@ -1,0 +1,10 @@
+cat file1 file2 file3 file4 file5 file6 file7 file8 file9  > train1 # 10
+cat file2 file3 file4 file5 file6 file7 file8 file9 file10 > train2 # 1
+cat file3 file4 file5 file6 file7 file8 file9 file10 file1 > train3 # 2
+cat file4 file5 file6 file7 file8 file9 file10 file1 file2 > train4 # 3
+cat file5 file6 file7 file8 file9 file10 file1 file2 file3 > train5 # 4
+cat file6 file7 file8 file9 file10 file1 file2 file3 file4 > train6 # 5
+cat file7 file8 file9 file10 file1 file2 file3 file4 file5 > train7 # 6
+cat file8 file9 file10 file1 file2 file3 file4 file5 file6 > train8 # 7
+cat file9 file10 file1 file2 file3 file4 file5 file6 file7 > train9 # 8
+cat file10 file1 file2 file3 file4 file5 file6 file7 file8 > train10 # 9
