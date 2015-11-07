@@ -1,4 +1,4 @@
-cat file1 file2 file3 file4 file5 file6 file7 file8 file9  > train1 # 10
+cat file1 file2 file3 file4 file5 file6 file7 file8 file9 > train1 # 10
 cat file2 file3 file4 file5 file6 file7 file8 file9 file10 > train2 # 1
 cat file3 file4 file5 file6 file7 file8 file9 file10 file1 > train3 # 2
 cat file4 file5 file6 file7 file8 file9 file10 file1 file2 > train4 # 3
