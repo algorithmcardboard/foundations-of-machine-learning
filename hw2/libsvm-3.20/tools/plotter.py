@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-KERNEL_DEGREE = 1
+KERNEL_DEGREE = 5
 FILE_NAME = "deg" + str(KERNEL_DEGREE)
 
 X = pd.read_csv(FILE_NAME+'.out.filtered', sep=' ')
