@@ -3,7 +3,9 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[T1]{fontenc}
+\usepackage{listings}
 \usepackage{fancyhdr}
+\usepackage{url}
 \pagestyle{fancy}
 \lhead{Anirudhan J Rajagopalan - ajr619 - N18824115} % chktex 8
 
@@ -16,6 +18,22 @@
 \maketitle
 
 \newpage
+
+\section*{C. Support Vector Machines}
+\subsection*{1}
+Installed the software from \url{http://www.csie.ntu.edu.tw/~cjlin/libsvm/}.  The installed version of software is also checked into github at \url{https://github.com/rajegannathan/foudnations-of-machine-learning/tree/master/hw2/libsvm-3.20}
+\subsection*{2}
+
+\noindent See the following command:
+\begin{lstlisting}[language=bash]
+  $ ./svm-scale -s splice_noise_train.txt.range  splice_noise_train.txt > splice_noise_train.txt.scale
+  $ ./svm-scale -r splice_noise_train.txt.range splice_noise_test.txt > splice_noise_test.txt.scale
+\end{lstlisting}
+
+\subsection*{3}
+\subsection*{4}
+\subsection*{5}
+\subsection*{6}
 
 \section*{D. Kernels}
 \subsection*{1}
