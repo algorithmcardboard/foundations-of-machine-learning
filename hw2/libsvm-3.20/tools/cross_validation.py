@@ -10,11 +10,11 @@ TOOLS_PATH = "/home/anirudhan/workspace/foudnations-of-machine-learning/hw2/libs
 DATASET_PATH = TOOLS_PATH + "partitions/"
 MODEL_PATH = DATASET_PATH + "models/"
 
-C_START = -6 
+C_START = -5 
 C_STEP = 0.5
-C_END = 6 + C_STEP #By default np.arange doesn't include the c_stop
+C_END = 5 + C_STEP #By default np.arange doesn't include the c_stop
 
-KERNEL_DEGREE = 1
+KERNEL_DEGREE = 3
 
 ACCURACY_REGEX = re.compile("Accuracy = ([\d]+\.[\d]+)")
 
