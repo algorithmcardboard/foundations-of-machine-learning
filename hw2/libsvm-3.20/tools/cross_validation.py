@@ -14,7 +14,7 @@ C_START = -5
 C_STEP = 0.5
 C_END = 5 + C_STEP #By default np.arange doesn't include the c_stop
 
-KERNEL_DEGREE = 3
+KERNEL_DEGREE = 5
 
 ACCURACY_REGEX = re.compile("Accuracy = ([\d]+\.[\d]+)")
 

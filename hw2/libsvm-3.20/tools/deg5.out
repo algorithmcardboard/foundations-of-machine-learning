@@ -1,0 +1,1960 @@
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981750
+obj = -0.671352, rho = -0.999912
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -5.0 train1 file10 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980355
+obj = -0.670712, rho = -0.999912
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -5.0 train2 file1 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980355
+obj = -0.670712, rho = -0.999913
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -5.0 train3 file2 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980355
+obj = -0.670712, rho = -0.999913
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -5.0 train4 file3 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981291
+obj = -0.671352, rho = -0.999912
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -5.0 train5 file4 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981291
+obj = -0.671352, rho = -0.999911
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -5.0 train6 file5 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980814
+obj = -0.670712, rho = -0.999929
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -5.0 train7 file6 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980814
+obj = -0.670712, rho = -0.999912
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -5.0 train8 file7 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981750
+obj = -0.671352, rho = -0.999912
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -5.0 train9 file8 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981750
+obj = -0.671352, rho = -0.999911
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -5.0 train10 file9 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981750
+obj = -1.501169, rho = -0.999803
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -4.5 train1 file10 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980355
+obj = -1.499738, rho = -0.999803
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -4.5 train2 file1 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980355
+obj = -1.499738, rho = -0.999805
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -4.5 train3 file2 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980355
+obj = -1.499737, rho = -0.999804
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -4.5 train4 file3 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981291
+obj = -1.501169, rho = -0.999804
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -4.5 train5 file4 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981291
+obj = -1.501168, rho = -0.999801
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -4.5 train6 file5 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980814
+obj = -1.499737, rho = -0.999841
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -4.5 train7 file6 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980814
+obj = -1.499737, rho = -0.999804
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -4.5 train8 file7 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981750
+obj = -1.501168, rho = -0.999804
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -4.5 train9 file8 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981750
+obj = -1.501168, rho = -0.999802
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -4.5 train10 file9 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981750
+obj = -3.356610, rho = -0.999558
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -4.0 train1 file10 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980355
+obj = -3.353411, rho = -0.999560
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -4.0 train2 file1 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980355
+obj = -3.353410, rho = -0.999564
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -4.0 train3 file2 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980355
+obj = -3.353409, rho = -0.999563
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -4.0 train4 file3 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981291
+obj = -3.356611, rho = -0.999561
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -4.0 train5 file4 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981291
+obj = -3.356607, rho = -0.999554
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -4.0 train6 file5 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980814
+obj = -3.353408, rho = -0.999644
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -4.0 train7 file6 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1048
+nu = 0.980814
+obj = -3.353410, rho = -0.999561
+nSV = 2096, nBSV = 2096
+Total nSV = 2096
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -4.0 train8 file7 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981750
+obj = -3.356609, rho = -0.999562
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -4.0 train9 file8 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1049
+nu = 0.981750
+obj = -3.356608, rho = -0.999557
+nSV = 2098, nBSV = 2098
+Total nSV = 2098
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -4.0 train10 file9 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1064
+nu = 0.981750
+obj = -7.505107, rho = -0.999700
+nSV = 2113, nBSV = 2083
+Total nSV = 2113
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -3.5 train1 file10 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1063
+nu = 0.980355
+obj = -7.497957, rho = -0.999703
+nSV = 2111, nBSV = 2081
+Total nSV = 2111
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -3.5 train2 file1 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1062
+nu = 0.980355
+obj = -7.497952, rho = -0.999692
+nSV = 2110, nBSV = 2082
+Total nSV = 2110
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -3.5 train3 file2 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1063
+nu = 0.980355
+obj = -7.497947, rho = -0.999699
+nSV = 2111, nBSV = 2081
+Total nSV = 2111
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -3.5 train4 file3 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1062
+nu = 0.981291
+obj = -7.505111, rho = -0.999754
+nSV = 2111, nBSV = 2085
+Total nSV = 2111
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -3.5 train5 file4 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1062
+nu = 0.981291
+obj = -7.505089, rho = -0.999719
+nSV = 2111, nBSV = 2085
+Total nSV = 2111
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -3.5 train6 file5 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1062
+nu = 0.980814
+obj = -7.497940, rho = -0.999720
+nSV = 2110, nBSV = 2082
+Total nSV = 2110
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -3.5 train7 file6 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1063
+nu = 0.980814
+obj = -7.497951, rho = -0.999670
+nSV = 2111, nBSV = 2081
+Total nSV = 2111
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -3.5 train8 file7 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1063
+nu = 0.981750
+obj = -7.505104, rho = -0.999682
+nSV = 2112, nBSV = 2084
+Total nSV = 2112
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -3.5 train9 file8 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1064
+nu = 0.981750
+obj = -7.505098, rho = -0.999701
+nSV = 2113, nBSV = 2083
+Total nSV = 2113
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -3.5 train10 file9 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1110
+nu = 0.981750
+obj = -16.779519, rho = -0.999013
+nSV = 2135, nBSV = 2050
+Total nSV = 2135
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -3.0 train1 file10 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1113
+nu = 0.980355
+obj = -16.763552, rho = -0.999079
+nSV = 2138, nBSV = 2045
+Total nSV = 2138
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -3.0 train2 file1 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1108
+nu = 0.980355
+obj = -16.763519, rho = -0.999068
+nSV = 2136, nBSV = 2046
+Total nSV = 2136
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -3.0 train3 file2 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1110
+nu = 0.980355
+obj = -16.763502, rho = -0.999084
+nSV = 2136, nBSV = 2046
+Total nSV = 2136
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -3.0 train4 file3 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1109
+nu = 0.981291
+obj = -16.779526, rho = -0.999054
+nSV = 2136, nBSV = 2050
+Total nSV = 2136
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -3.0 train5 file4 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1111
+nu = 0.981291
+obj = -16.779440, rho = -0.999054
+nSV = 2136, nBSV = 2051
+Total nSV = 2136
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -3.0 train6 file5 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1113
+nu = 0.980814
+obj = -16.763459, rho = -0.999065
+nSV = 2135, nBSV = 2047
+Total nSV = 2135
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -3.0 train7 file6 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1110
+nu = 0.980814
+obj = -16.763517, rho = -0.999071
+nSV = 2136, nBSV = 2046
+Total nSV = 2136
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -3.0 train8 file7 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1107
+nu = 0.981750
+obj = -16.779498, rho = -0.999034
+nSV = 2135, nBSV = 2052
+Total nSV = 2135
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -3.0 train9 file8 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1106
+nu = 0.981750
+obj = -16.779451, rho = -0.999020
+nSV = 2135, nBSV = 2052
+Total nSV = 2135
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -3.0 train10 file9 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1143
+nu = 0.981750
+obj = -37.507869, rho = -0.997543
+nSV = 2136, nBSV = 2033
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -2.5 train1 file10 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1148
+nu = 0.980355
+obj = -37.472255, rho = -0.997669
+nSV = 2138, nBSV = 2024
+Total nSV = 2138
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -2.5 train2 file1 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1143
+nu = 0.980355
+obj = -37.472106, rho = -0.997638
+nSV = 2137, nBSV = 2026
+Total nSV = 2137
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -2.5 train3 file2 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1144
+nu = 0.980355
+obj = -37.472034, rho = -0.997633
+nSV = 2137, nBSV = 2024
+Total nSV = 2137
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -2.5 train4 file3 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1136
+nu = 0.981291
+obj = -37.507907, rho = -0.997627
+nSV = 2137, nBSV = 2037
+Total nSV = 2137
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -2.5 train5 file4 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1141
+nu = 0.981291
+obj = -37.507473, rho = -0.997608
+nSV = 2137, nBSV = 2032
+Total nSV = 2137
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -2.5 train6 file5 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1144
+nu = 0.980814
+obj = -37.471801, rho = -0.997624
+nSV = 2136, nBSV = 2031
+Total nSV = 2136
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -2.5 train7 file6 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1144
+nu = 0.980814
+obj = -37.472097, rho = -0.997649
+nSV = 2137, nBSV = 2027
+Total nSV = 2137
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -2.5 train8 file7 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1139
+nu = 0.981750
+obj = -37.507778, rho = -0.997557
+nSV = 2136, nBSV = 2033
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -2.5 train9 file8 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1135
+nu = 0.981750
+obj = -37.507525, rho = -0.997530
+nSV = 2136, nBSV = 2035
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -2.5 train10 file9 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1174
+nu = 0.981750
+obj = -83.808597, rho = -0.994314
+nSV = 2136, nBSV = 2012
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -2.0 train1 file10 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1181
+nu = 0.980355
+obj = -83.729410, rho = -0.994610
+nSV = 2138, nBSV = 1999
+Total nSV = 2138
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -2.0 train2 file1 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1173
+nu = 0.980355
+obj = -83.728685, rho = -0.994526
+nSV = 2137, nBSV = 2004
+Total nSV = 2137
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -2.0 train3 file2 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1184
+nu = 0.980355
+obj = -83.728313, rho = -0.994534
+nSV = 2137, nBSV = 2003
+Total nSV = 2137
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -2.0 train4 file3 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1161
+nu = 0.981291
+obj = -83.808801, rho = -0.994463
+nSV = 2137, nBSV = 2014
+Total nSV = 2137
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -2.0 train5 file4 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1166
+nu = 0.981291
+obj = -83.806626, rho = -0.994492
+nSV = 2137, nBSV = 2014
+Total nSV = 2137
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -2.0 train6 file5 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1174
+nu = 0.980814
+obj = -83.727156, rho = -0.994502
+nSV = 2136, nBSV = 2007
+Total nSV = 2136
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -2.0 train7 file6 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1180
+nu = 0.980814
+obj = -83.728639, rho = -0.994549
+nSV = 2137, nBSV = 2005
+Total nSV = 2137
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -2.0 train8 file7 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1163
+nu = 0.981750
+obj = -83.808142, rho = -0.994372
+nSV = 2136, nBSV = 2016
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -2.0 train9 file8 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1159
+nu = 0.981750
+obj = -83.806874, rho = -0.994326
+nSV = 2136, nBSV = 2021
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -2.0 train10 file9 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1191
+nu = 0.981750
+obj = -187.093852, rho = -0.987249
+nSV = 2136, nBSV = 2004
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -1.5 train1 file10 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1206
+nu = 0.980355
+obj = -186.919047, rho = -0.987899
+nSV = 2138, nBSV = 1985
+Total nSV = 2138
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -1.5 train2 file1 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1201
+nu = 0.980355
+obj = -186.915438, rho = -0.987709
+nSV = 2137, nBSV = 1989
+Total nSV = 2137
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -1.5 train3 file2 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1204
+nu = 0.980355
+obj = -186.913548, rho = -0.987734
+nSV = 2137, nBSV = 1993
+Total nSV = 2137
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -1.5 train4 file3 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1199
+nu = 0.981291
+obj = -187.094937, rho = -0.987474
+nSV = 2137, nBSV = 1992
+Total nSV = 2137
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -1.5 train5 file4 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1197
+nu = 0.981291
+obj = -187.084039, rho = -0.987606
+nSV = 2137, nBSV = 2003
+Total nSV = 2137
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -1.5 train6 file5 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1204
+nu = 0.980814
+obj = -186.907797, rho = -0.987613
+nSV = 2136, nBSV = 1991
+Total nSV = 2136
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -1.5 train7 file6 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1199
+nu = 0.980814
+obj = -186.915186, rho = -0.987711
+nSV = 2137, nBSV = 1991
+Total nSV = 2137
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -1.5 train8 file7 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1193
+nu = 0.981750
+obj = -187.091623, rho = -0.987318
+nSV = 2136, nBSV = 2000
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -1.5 train9 file8 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1186
+nu = 0.981750
+obj = -187.085293, rho = -0.987183
+nSV = 2136, nBSV = 2006
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -1.5 train10 file9 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1209
+nu = 0.981750
+obj = -416.815180, rho = -0.971458
+nSV = 2136, nBSV = 1999
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -1.0 train1 file10 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1229
+nu = 0.980355
+obj = -416.435601, rho = -0.972927
+nSV = 2138, nBSV = 1978
+Total nSV = 2138
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -1.0 train2 file1 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1221
+nu = 0.980355
+obj = -416.417537, rho = -0.972514
+nSV = 2137, nBSV = 1987
+Total nSV = 2137
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -1.0 train3 file2 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1232
+nu = 0.980355
+obj = -416.408097, rho = -0.972559
+nSV = 2137, nBSV = 1986
+Total nSV = 2137
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -1.0 train4 file3 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1218
+nu = 0.981291
+obj = -416.820622, rho = -0.971975
+nSV = 2137, nBSV = 1989
+Total nSV = 2137
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -1.0 train5 file4 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1214
+nu = 0.981291
+obj = -416.766126, rho = -0.972240
+nSV = 2137, nBSV = 1995
+Total nSV = 2137
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -1.0 train6 file5 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1215
+nu = 0.980814
+obj = -416.379341, rho = -0.972267
+nSV = 2136, nBSV = 1983
+Total nSV = 2136
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -1.0 train7 file6 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1227
+nu = 0.980814
+obj = -416.416316, rho = -0.972493
+nSV = 2137, nBSV = 1983
+Total nSV = 2137
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -1.0 train8 file7 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1216
+nu = 0.981750
+obj = -416.804047, rho = -0.971623
+nSV = 2136, nBSV = 1995
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -1.0 train9 file8 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1207
+nu = 0.981750
+obj = -416.772397, rho = -0.971324
+nSV = 2136, nBSV = 2000
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -1.0 train10 file9 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1231
+nu = 0.981750
+obj = -924.330088, rho = -0.936176
+nSV = 2137, nBSV = 1996
+Total nSV = 2137
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -0.5 train1 file10 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1264
+nu = 0.980355
+obj = -923.537759, rho = -0.939450
+nSV = 2138, nBSV = 1976
+Total nSV = 2138
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -0.5 train2 file1 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1251
+nu = 0.980355
+obj = -923.447446, rho = -0.938539
+nSV = 2137, nBSV = 1985
+Total nSV = 2137
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -0.5 train3 file2 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1252
+nu = 0.980355
+obj = -923.400234, rho = -0.938617
+nSV = 2137, nBSV = 1982
+Total nSV = 2137
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 -0.5 train4 file3 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1240
+nu = 0.981291
+obj = -924.357286, rho = -0.937368
+nSV = 2137, nBSV = 1988
+Total nSV = 2137
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -0.5 train5 file4 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1245
+nu = 0.981291
+obj = -924.084828, rho = -0.937884
+nSV = 2137, nBSV = 1990
+Total nSV = 2137
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 -0.5 train6 file5 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1247
+nu = 0.980814
+obj = -923.256483, rho = -0.937973
+nSV = 2136, nBSV = 1981
+Total nSV = 2136
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -0.5 train7 file6 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1252
+nu = 0.980814
+obj = -923.441358, rho = -0.938491
+nSV = 2137, nBSV = 1982
+Total nSV = 2137
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 -0.5 train8 file7 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1240
+nu = 0.981750
+obj = -924.274423, rho = -0.936548
+nSV = 2136, nBSV = 1992
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -0.5 train9 file8 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1229
+nu = 0.981750
+obj = -924.116157, rho = -0.935845
+nSV = 2136, nBSV = 1997
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 -0.5 train10 file9 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1257
+nu = 0.981750
+obj = -2028.379897, rho = -0.857258
+nSV = 2137, nBSV = 1991
+Total nSV = 2137
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 0.0 train1 file10 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1294
+nu = 0.980355
+obj = -2026.890360, rho = -0.864626
+nSV = 2138, nBSV = 1976
+Total nSV = 2138
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 0.0 train2 file1 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1273
+nu = 0.980355
+obj = -2026.438798, rho = -0.862565
+nSV = 2137, nBSV = 1983
+Total nSV = 2137
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 0.0 train3 file2 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1282
+nu = 0.980355
+obj = -2026.202750, rho = -0.862737
+nSV = 2137, nBSV = 1981
+Total nSV = 2137
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 0.0 train4 file3 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1258
+nu = 0.981291
+obj = -2028.515867, rho = -0.859949
+nSV = 2137, nBSV = 1988
+Total nSV = 2137
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 0.0 train5 file4 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1266
+nu = 0.981291
+obj = -2027.153580, rho = -0.861089
+nSV = 2137, nBSV = 1988
+Total nSV = 2137
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 0.0 train6 file5 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1276
+nu = 0.980814
+obj = -2025.484009, rho = -0.861328
+nSV = 2136, nBSV = 1981
+Total nSV = 2136
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 0.0 train7 file6 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1278
+nu = 0.980814
+obj = -2026.408373, rho = -0.862460
+nSV = 2137, nBSV = 1980
+Total nSV = 2137
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 0.0 train8 file7 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1265
+nu = 0.981750
+obj = -2028.101592, rho = -0.858137
+nSV = 2136, nBSV = 1992
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 0.0 train9 file8 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1253
+nu = 0.981750
+obj = -2027.310220, rho = -0.856549
+nSV = 2136, nBSV = 1995
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 0.0 train10 file9 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1275
+nu = 0.981750
+obj = -4343.170172, rho = -0.680827
+nSV = 2137, nBSV = 1991
+Total nSV = 2137
+Accuracy = 52.521% (125/238) (classification)
+OURRESULT 5 0.5 train1 file10 52.521
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1308
+nu = 0.980355
+obj = -4341.250336, rho = -0.697301
+nSV = 2138, nBSV = 1976
+Total nSV = 2138
+Accuracy = 51.4768% (122/237) (classification)
+OURRESULT 5 0.5 train2 file1 51.4768
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1306
+nu = 0.980355
+obj = -4338.992566, rho = -0.692704
+nSV = 2137, nBSV = 1982
+Total nSV = 2137
+Accuracy = 50.6329% (120/237) (classification)
+OURRESULT 5 0.5 train3 file2 50.6329
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1307
+nu = 0.980355
+obj = -4337.812277, rho = -0.693080
+nSV = 2137, nBSV = 1981
+Total nSV = 2137
+Accuracy = 51.0549% (121/237) (classification)
+OURRESULT 5 0.5 train4 file3 51.0549
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1289
+nu = 0.981291
+obj = -4343.850027, rho = -0.686849
+nSV = 2137, nBSV = 1987
+Total nSV = 2137
+Accuracy = 51.4768% (122/237) (classification)
+OURRESULT 5 0.5 train5 file4 51.4768
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1299
+nu = 0.981291
+obj = -4337.038590, rho = -0.689408
+nSV = 2137, nBSV = 1988
+Total nSV = 2137
+Accuracy = 51.4768% (122/237) (classification)
+OURRESULT 5 0.5 train6 file5 51.4768
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1297
+nu = 0.980814
+obj = -4334.218605, rho = -0.689938
+nSV = 2136, nBSV = 1981
+Total nSV = 2136
+Accuracy = 50.8403% (121/238) (classification)
+OURRESULT 5 0.5 train7 file6 50.8403
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1315
+nu = 0.980814
+obj = -4338.840462, rho = -0.692452
+nSV = 2137, nBSV = 1979
+Total nSV = 2137
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 0.5 train8 file7 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1289
+nu = 0.981750
+obj = -4341.778606, rho = -0.682797
+nSV = 2136, nBSV = 1992
+Total nSV = 2136
+Accuracy = 52.1008% (124/238) (classification)
+OURRESULT 5 0.5 train9 file8 52.1008
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1272
+nu = 0.981750
+obj = -4337.821791, rho = -0.679233
+nSV = 2136, nBSV = 1995
+Total nSV = 2136
+Accuracy = 51.2605% (122/238) (classification)
+OURRESULT 5 0.5 train10 file9 51.2605
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1401
+nu = 0.973465
+obj = -8772.853782, rho = -0.338342
+nSV = 2133, nBSV = 1940
+Total nSV = 2133
+Accuracy = 53.7815% (128/238) (classification)
+OURRESULT 5 1.0 train1 file10 53.7815
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1421
+nu = 0.971703
+obj = -8778.063079, rho = -0.373637
+nSV = 2134, nBSV = 1937
+Total nSV = 2134
+Accuracy = 53.1646% (126/237) (classification)
+OURRESULT 5 1.0 train2 file1 53.1646
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1412
+nu = 0.970151
+obj = -8777.938212, rho = -0.373954
+nSV = 2131, nBSV = 1940
+Total nSV = 2131
+Accuracy = 51.8987% (123/237) (classification)
+OURRESULT 5 1.0 train3 file2 51.8987
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1400
+nu = 0.972162
+obj = -8758.738949, rho = -0.362743
+nSV = 2133, nBSV = 1939
+Total nSV = 2133
+Accuracy = 52.7426% (125/237) (classification)
+OURRESULT 5 1.0 train4 file3 52.7426
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1392
+nu = 0.972455
+obj = -8781.750947, rho = -0.352777
+nSV = 2132, nBSV = 1940
+Total nSV = 2132
+Accuracy = 53.5865% (127/237) (classification)
+OURRESULT 5 1.0 train5 file4 53.5865
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1421
+nu = 0.971377
+obj = -8749.775367, rho = -0.365584
+nSV = 2132, nBSV = 1934
+Total nSV = 2132
+Accuracy = 51.8987% (123/237) (classification)
+OURRESULT 5 1.0 train6 file5 51.8987
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1414
+nu = 0.970369
+obj = -8754.237587, rho = -0.366946
+nSV = 2130, nBSV = 1931
+Total nSV = 2130
+Accuracy = 52.9412% (126/238) (classification)
+OURRESULT 5 1.0 train7 file6 52.9412
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1435
+nu = 0.971654
+obj = -8768.103189, rho = -0.365796
+nSV = 2133, nBSV = 1935
+Total nSV = 2133
+Accuracy = 54.2017% (129/238) (classification)
+OURRESULT 5 1.0 train8 file7 54.2017
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1395
+nu = 0.972688
+obj = -8768.912670, rho = -0.347011
+nSV = 2133, nBSV = 1940
+Total nSV = 2133
+Accuracy = 54.2017% (129/238) (classification)
+OURRESULT 5 1.0 train9 file8 54.2017
+.
+WARNING: using -h 0 may be faster
+*
+optimization finished, #iter = 1398
+nu = 0.971261
+obj = -8759.669674, rho = -0.347945
+nSV = 2130, nBSV = 1936
+Total nSV = 2130
+Accuracy = 55.8824% (133/238) (classification)
+OURRESULT 5 1.0 train10 file9 55.8824
+.
+WARNING: using -h 0 may be faster
+*.*
+optimization finished, #iter = 2132
+nu = 0.889139
+obj = -15940.811415, rho = -0.151843
+nSV = 2123, nBSV = 1561
+Total nSV = 2123
+Accuracy = 68.4874% (163/238) (classification)
+OURRESULT 5 1.5 train1 file10 68.4874
+.
+WARNING: using -h 0 may be faster
+*.*
+optimization finished, #iter = 2148
+nu = 0.891359
+obj = -15976.557066, rho = -0.170358
+nSV = 2127, nBSV = 1577
+Total nSV = 2127
+Accuracy = 65.4008% (155/237) (classification)
+OURRESULT 5 1.5 train2 file1 65.4008
+.
+WARNING: using -h 0 may be faster
+*.*
+optimization finished, #iter = 2135
+nu = 0.889732
+obj = -16015.956762, rho = -0.178219
+nSV = 2122, nBSV = 1574
+Total nSV = 2122
+Accuracy = 64.135% (152/237) (classification)
+OURRESULT 5 1.5 train3 file2 64.135
+.
+WARNING: using -h 0 may be faster
+*.*
+optimization finished, #iter = 2144
+nu = 0.889218
+obj = -15881.292378, rho = -0.169229
+nSV = 2124, nBSV = 1559
+Total nSV = 2124
+Accuracy = 63.7131% (151/237) (classification)
+OURRESULT 5 1.5 train4 file3 63.7131
+.
+WARNING: using -h 0 may be faster
+*.*
+optimization finished, #iter = 2127
+nu = 0.891441
+obj = -15968.839432, rho = -0.155480
+nSV = 2123, nBSV = 1578
+Total nSV = 2123
+Accuracy = 67.0886% (159/237) (classification)
+OURRESULT 5 1.5 train5 file4 67.0886
+.
+WARNING: using -h 0 may be faster
+*.*
+optimization finished, #iter = 2121
+nu = 0.887894
+obj = -15886.461090, rho = -0.173342
+nSV = 2124, nBSV = 1564
+Total nSV = 2124
+Accuracy = 64.135% (152/237) (classification)
+OURRESULT 5 1.5 train6 file5 64.135
+.
+WARNING: using -h 0 may be faster
+*.*
+optimization finished, #iter = 2143
+nu = 0.888441
+obj = -15917.115890, rho = -0.160438
+nSV = 2123, nBSV = 1558
+Total nSV = 2123
+Accuracy = 65.1261% (155/238) (classification)
+OURRESULT 5 1.5 train7 file6 65.1261
+.
+WARNING: using -h 0 may be faster
+*.*
+optimization finished, #iter = 2136
+nu = 0.890265
+obj = -15934.621872, rho = -0.157737
+nSV = 2125, nBSV = 1571
+Total nSV = 2125
+Accuracy = 61.3445% (146/238) (classification)
+OURRESULT 5 1.5 train8 file7 61.3445
+.
+WARNING: using -h 0 may be faster
+*.*
+optimization finished, #iter = 2143
+nu = 0.889918
+obj = -15928.643315, rho = -0.149633
+nSV = 2125, nBSV = 1566
+Total nSV = 2125
+Accuracy = 62.605% (149/238) (classification)
+OURRESULT 5 1.5 train9 file8 62.605
+.
+WARNING: using -h 0 may be faster
+*.*
+optimization finished, #iter = 2122
+nu = 0.891088
+obj = -15889.575757, rho = -0.139045
+nSV = 2125, nBSV = 1566
+Total nSV = 2125
+Accuracy = 64.2857% (153/238) (classification)
+OURRESULT 5 1.5 train10 file9 64.2857
+..*.*
+optimization finished, #iter = 3328
+nu = 0.716096
+obj = -25480.544875, rho = -0.076936
+nSV = 2116, nBSV = 1007
+Total nSV = 2116
+Accuracy = 78.1513% (186/238) (classification)
+OURRESULT 5 2.0 train1 file10 78.1513
+..*.*
+optimization finished, #iter = 3340
+nu = 0.716715
+obj = -25487.962311, rho = -0.097794
+nSV = 2116, nBSV = 1005
+Total nSV = 2116
+Accuracy = 77.2152% (183/237) (classification)
+OURRESULT 5 2.0 train2 file1 77.2152
+..*.*
+optimization finished, #iter = 3242
+nu = 0.720123
+obj = -25710.535841, rho = -0.101120
+nSV = 2112, nBSV = 1021
+Total nSV = 2112
+Accuracy = 72.9958% (173/237) (classification)
+OURRESULT 5 2.0 train3 file2 72.9958
+..*.*
+optimization finished, #iter = 3304
+nu = 0.712582
+obj = -25275.248815, rho = -0.111031
+nSV = 2112, nBSV = 1002
+Total nSV = 2112
+Accuracy = 71.73% (170/237) (classification)
+OURRESULT 5 2.0 train4 file3 71.73
+..*.*
+optimization finished, #iter = 3407
+nu = 0.716886
+obj = -25456.772589, rho = -0.092303
+nSV = 2116, nBSV = 1001
+Total nSV = 2116
+Accuracy = 78.0591% (185/237) (classification)
+OURRESULT 5 2.0 train5 file4 78.0591
+..*.*
+optimization finished, #iter = 3326
+nu = 0.713601
+obj = -25291.117550, rho = -0.102527
+nSV = 2113, nBSV = 999
+Total nSV = 2113
+Accuracy = 75.5274% (179/237) (classification)
+OURRESULT 5 2.0 train6 file5 75.5274
+..*.*
+optimization finished, #iter = 3274
+nu = 0.714757
+obj = -25423.716169, rho = -0.093090
+nSV = 2115, nBSV = 996
+Total nSV = 2115
+Accuracy = 68.4874% (163/238) (classification)
+OURRESULT 5 2.0 train7 file6 68.4874
+..*.*
+optimization finished, #iter = 3343
+nu = 0.716894
+obj = -25363.689985, rho = -0.091898
+nSV = 2116, nBSV = 1006
+Total nSV = 2116
+Accuracy = 68.9076% (164/238) (classification)
+OURRESULT 5 2.0 train8 file7 68.9076
+..*.*
+optimization finished, #iter = 3281
+nu = 0.714876
+obj = -25400.679821, rho = -0.091462
+nSV = 2112, nBSV = 997
+Total nSV = 2112
+Accuracy = 71.8487% (171/238) (classification)
+OURRESULT 5 2.0 train9 file8 71.8487
+..*.*
+optimization finished, #iter = 3337
+nu = 0.713034
+obj = -25175.411437, rho = -0.086995
+nSV = 2115, nBSV = 992
+Total nSV = 2115
+Accuracy = 72.6891% (173/238) (classification)
+OURRESULT 5 2.0 train10 file9 72.6891
+...*.*
+optimization finished, #iter = 4282
+nu = 0.495266
+obj = -35443.039304, rho = -0.050810
+nSV = 2085, nBSV = 465
+Total nSV = 2085
+Accuracy = 73.9496% (176/238) (classification)
+OURRESULT 5 2.5 train1 file10 73.9496
+...*.*
+optimization finished, #iter = 4337
+nu = 0.494084
+obj = -35510.470276, rho = -0.076072
+nSV = 2092, nBSV = 462
+Total nSV = 2092
+Accuracy = 76.3713% (181/237) (classification)
+OURRESULT 5 2.5 train2 file1 76.3713
+...*.*
+optimization finished, #iter = 4392
+nu = 0.499219
+obj = -35860.795910, rho = -0.066666
+nSV = 2090, nBSV = 463
+Total nSV = 2090
+Accuracy = 75.1055% (178/237) (classification)
+OURRESULT 5 2.5 train3 file2 75.1055
+...*.*
+optimization finished, #iter = 4282
+nu = 0.489595
+obj = -35060.916339, rho = -0.086047
+nSV = 2085, nBSV = 445
+Total nSV = 2085
+Accuracy = 73.4177% (174/237) (classification)
+OURRESULT 5 2.5 train4 file3 73.4177
+...*.*
+optimization finished, #iter = 4245
+nu = 0.493213
+obj = -35432.637807, rho = -0.069929
+nSV = 2081, nBSV = 462
+Total nSV = 2081
+Accuracy = 77.6371% (184/237) (classification)
+OURRESULT 5 2.5 train5 file4 77.6371
+...*.*
+optimization finished, #iter = 4287
+nu = 0.489626
+obj = -35069.416455, rho = -0.070525
+nSV = 2084, nBSV = 450
+Total nSV = 2084
+Accuracy = 74.2616% (176/237) (classification)
+OURRESULT 5 2.5 train6 file5 74.2616
+...*.*
+optimization finished, #iter = 4317
+nu = 0.493324
+obj = -35417.455726, rho = -0.063366
+nSV = 2086, nBSV = 452
+Total nSV = 2086
+Accuracy = 71.8487% (171/238) (classification)
+OURRESULT 5 2.5 train7 file6 71.8487
+...*.*
+optimization finished, #iter = 4256
+nu = 0.491615
+obj = -35083.071011, rho = -0.078025
+nSV = 2082, nBSV = 453
+Total nSV = 2082
+Accuracy = 70.1681% (167/238) (classification)
+OURRESULT 5 2.5 train8 file7 70.1681
+...*.*
+optimization finished, #iter = 4260
+nu = 0.492797
+obj = -35388.745337, rho = -0.068736
+nSV = 2082, nBSV = 458
+Total nSV = 2082
+Accuracy = 74.7899% (178/238) (classification)
+OURRESULT 5 2.5 train9 file8 74.7899
+...*.*
+optimization finished, #iter = 4362
+nu = 0.487463
+obj = -34723.831063, rho = -0.076068
+nSV = 2085, nBSV = 440
+Total nSV = 2085
+Accuracy = 76.4706% (182/238) (classification)
+OURRESULT 5 2.5 train10 file9 76.4706
+...*..*
+optimization finished, #iter = 5033
+nu = 0.290957
+obj = -44414.262499, rho = -0.059896
+nSV = 2063, nBSV = 148
+Total nSV = 2063
+Accuracy = 75.6303% (180/238) (classification)
+OURRESULT 5 3.0 train1 file10 75.6303
+...*.*
+optimization finished, #iter = 4906
+nu = 0.291498
+obj = -44990.345580, rho = -0.083175
+nSV = 2069, nBSV = 156
+Total nSV = 2069
+Accuracy = 76.7932% (182/237) (classification)
+OURRESULT 5 3.0 train2 file1 76.7932
+...*.*
+optimization finished, #iter = 4923
+nu = 0.294296
+obj = -45410.109819, rho = -0.075602
+nSV = 2060, nBSV = 161
+Total nSV = 2060
+Accuracy = 75.1055% (178/237) (classification)
+OURRESULT 5 3.0 train3 file2 75.1055
+...*.*
+optimization finished, #iter = 4837
+nu = 0.287289
+obj = -44170.697666, rho = -0.097743
+nSV = 2057, nBSV = 150
+Total nSV = 2057
+Accuracy = 72.1519% (171/237) (classification)
+OURRESULT 5 3.0 train4 file3 72.1519
+...*.*
+optimization finished, #iter = 4897
+nu = 0.290710
+obj = -44693.151691, rho = -0.086307
+nSV = 2064, nBSV = 152
+Total nSV = 2064
+Accuracy = 76.7932% (182/237) (classification)
+OURRESULT 5 3.0 train5 file4 76.7932
+...*.*
+optimization finished, #iter = 4875
+nu = 0.287458
+obj = -44200.813207, rho = -0.072418
+nSV = 2062, nBSV = 163
+Total nSV = 2062
+Accuracy = 73.4177% (174/237) (classification)
+OURRESULT 5 3.0 train6 file5 73.4177
+...*..*
+optimization finished, #iter = 5020
+nu = 0.290651
+obj = -44690.912276, rho = -0.064529
+nSV = 2062, nBSV = 153
+Total nSV = 2062
+Accuracy = 73.1092% (174/238) (classification)
+OURRESULT 5 3.0 train7 file6 73.1092
+...*.*
+optimization finished, #iter = 4918
+nu = 0.287446
+obj = -43915.129568, rho = -0.095226
+nSV = 2061, nBSV = 152
+Total nSV = 2061
+Accuracy = 71.0084% (169/238) (classification)
+OURRESULT 5 3.0 train8 file7 71.0084
+...*.*
+optimization finished, #iter = 4948
+nu = 0.290522
+obj = -44746.562109, rho = -0.078781
+nSV = 2063, nBSV = 154
+Total nSV = 2063
+Accuracy = 73.5294% (175/238) (classification)
+OURRESULT 5 3.0 train9 file8 73.5294
+...*.*
+optimization finished, #iter = 4961
+nu = 0.284411
+obj = -43392.119841, rho = -0.089581
+nSV = 2065, nBSV = 149
+Total nSV = 2065
+Accuracy = 75.6303% (180/238) (classification)
+OURRESULT 5 3.0 train10 file9 75.6303
+....*.*
+optimization finished, #iter = 5395
+nu = 0.157277
+obj = -55027.220570, rho = -0.078322
+nSV = 2056, nBSV = 70
+Total nSV = 2056
+Accuracy = 78.1513% (186/238) (classification)
+OURRESULT 5 3.5 train1 file10 78.1513
+....*.*
+optimization finished, #iter = 5329
+nu = 0.160311
+obj = -56442.567771, rho = -0.093286
+nSV = 2061, nBSV = 78
+Total nSV = 2061
+Accuracy = 75.9494% (180/237) (classification)
+OURRESULT 5 3.5 train2 file1 75.9494
+....*.*
+optimization finished, #iter = 5285
+nu = 0.161792
+obj = -56996.438163, rho = -0.095414
+nSV = 2053, nBSV = 81
+Total nSV = 2053
+Accuracy = 74.2616% (176/237) (classification)
+OURRESULT 5 3.5 train3 file2 74.2616
+....*.*
+optimization finished, #iter = 5311
+nu = 0.157085
+obj = -55143.739146, rho = -0.119039
+nSV = 2055, nBSV = 75
+Total nSV = 2055
+Accuracy = 72.1519% (171/237) (classification)
+OURRESULT 5 3.5 train4 file3 72.1519
+....*.*
+optimization finished, #iter = 5264
+nu = 0.158767
+obj = -55940.562270, rho = -0.105823
+nSV = 2059, nBSV = 73
+Total nSV = 2059
+Accuracy = 74.6835% (177/237) (classification)
+OURRESULT 5 3.5 train5 file4 74.6835
+....*.*
+optimization finished, #iter = 5382
+nu = 0.157809
+obj = -54955.922307, rho = -0.088328
+nSV = 2057, nBSV = 81
+Total nSV = 2057
+Accuracy = 74.6835% (177/237) (classification)
+OURRESULT 5 3.5 train6 file5 74.6835
+....*.*
+optimization finished, #iter = 5224
+nu = 0.158819
+obj = -55936.473361, rho = -0.079190
+nSV = 2055, nBSV = 75
+Total nSV = 2055
+Accuracy = 70.1681% (167/238) (classification)
+OURRESULT 5 3.5 train7 file6 70.1681
+....*.*
+optimization finished, #iter = 5298
+nu = 0.156117
+obj = -54262.477686, rho = -0.117585
+nSV = 2050, nBSV = 74
+Total nSV = 2050
+Accuracy = 71.0084% (169/238) (classification)
+OURRESULT 5 3.5 train8 file7 71.0084
+....*.*
+optimization finished, #iter = 5264
+nu = 0.159072
+obj = -56250.897851, rho = -0.095986
+nSV = 2057, nBSV = 81
+Total nSV = 2057
+Accuracy = 76.0504% (181/238) (classification)
+OURRESULT 5 3.5 train9 file8 76.0504
+....*.*
+optimization finished, #iter = 5378
+nu = 0.153928
+obj = -53590.004926, rho = -0.100827
+nSV = 2057, nBSV = 71
+Total nSV = 2057
+Accuracy = 75.6303% (180/238) (classification)
+OURRESULT 5 3.5 train10 file9 75.6303
+....*.*
+optimization finished, #iter = 5725
+nu = 0.087042
+obj = -72389.885427, rho = -0.112953
+nSV = 2054, nBSV = 49
+Total nSV = 2054
+Accuracy = 78.1513% (186/238) (classification)
+OURRESULT 5 4.0 train1 file10 78.1513
+....*.*
+optimization finished, #iter = 5590
+nu = 0.089605
+obj = -74147.104319, rho = -0.117599
+nSV = 2054, nBSV = 48
+Total nSV = 2054
+Accuracy = 75.9494% (180/237) (classification)
+OURRESULT 5 4.0 train2 file1 75.9494
+....*.*
+optimization finished, #iter = 5632
+nu = 0.090368
+obj = -75124.445641, rho = -0.127449
+nSV = 2049, nBSV = 50
+Total nSV = 2049
+Accuracy = 74.2616% (176/237) (classification)
+OURRESULT 5 4.0 train3 file2 74.2616
+....*.*
+optimization finished, #iter = 5551
+nu = 0.087150
+obj = -72484.129687, rho = -0.153704
+nSV = 2053, nBSV = 47
+Total nSV = 2053
+Accuracy = 72.1519% (171/237) (classification)
+OURRESULT 5 4.0 train4 file3 72.1519
+....*.*
+optimization finished, #iter = 5618
+nu = 0.088778
+obj = -73699.764992, rho = -0.132537
+nSV = 2052, nBSV = 47
+Total nSV = 2052
+Accuracy = 74.6835% (177/237) (classification)
+OURRESULT 5 4.0 train5 file4 74.6835
+....*.*
+optimization finished, #iter = 5713
+nu = 0.086666
+obj = -71282.522837, rho = -0.120909
+nSV = 2052, nBSV = 49
+Total nSV = 2052
+Accuracy = 72.1519% (171/237) (classification)
+OURRESULT 5 4.0 train6 file5 72.1519
+....*.*
+optimization finished, #iter = 5625
+nu = 0.088374
+obj = -74080.279308, rho = -0.107972
+nSV = 2049, nBSV = 48
+Total nSV = 2049
+Accuracy = 68.0672% (162/238) (classification)
+OURRESULT 5 4.0 train7 file6 68.0672
+....*.*
+optimization finished, #iter = 5658
+nu = 0.085770
+obj = -69959.586314, rho = -0.155427
+nSV = 2048, nBSV = 45
+Total nSV = 2048
+Accuracy = 69.7479% (166/238) (classification)
+OURRESULT 5 4.0 train8 file7 69.7479
+....*.*
+optimization finished, #iter = 5639
+nu = 0.089372
+obj = -74549.385657, rho = -0.134145
+nSV = 2053, nBSV = 51
+Total nSV = 2053
+Accuracy = 74.7899% (178/238) (classification)
+OURRESULT 5 4.0 train9 file8 74.7899
+....*.*
+optimization finished, #iter = 5568
+nu = 0.085095
+obj = -69272.982253, rho = -0.130049
+nSV = 2052, nBSV = 46
+Total nSV = 2052
+Accuracy = 71.4286% (170/238) (classification)
+OURRESULT 5 4.0 train10 file9 71.4286
+....*.*
+optimization finished, #iter = 5865
+nu = 0.051389
+obj = -105139.896626, rho = -0.169459
+nSV = 2051, nBSV = 38
+Total nSV = 2051
+Accuracy = 76.8908% (183/238) (classification)
+OURRESULT 5 4.5 train1 file10 76.8908
+....*.*
+optimization finished, #iter = 5840
+nu = 0.052404
+obj = -107411.549982, rho = -0.146160
+nSV = 2054, nBSV = 37
+Total nSV = 2054
+Accuracy = 75.1055% (178/237) (classification)
+OURRESULT 5 4.5 train2 file1 75.1055
+....*.*
+optimization finished, #iter = 5855
+nu = 0.053229
+obj = -109316.049639, rho = -0.172458
+nSV = 2050, nBSV = 39
+Total nSV = 2050
+Accuracy = 71.73% (170/237) (classification)
+OURRESULT 5 4.5 train3 file2 71.73
+....*.*
+optimization finished, #iter = 5907
+nu = 0.051486
+obj = -105257.832189, rho = -0.194381
+nSV = 2052, nBSV = 37
+Total nSV = 2052
+Accuracy = 72.9958% (173/237) (classification)
+OURRESULT 5 4.5 train4 file3 72.9958
+....*.*
+optimization finished, #iter = 5913
+nu = 0.052148
+obj = -107133.620459, rho = -0.167112
+nSV = 2049, nBSV = 34
+Total nSV = 2049
+Accuracy = 72.9958% (173/237) (classification)
+OURRESULT 5 4.5 train5 file4 72.9958
+....*.*
+optimization finished, #iter = 5828
+nu = 0.050426
+obj = -102350.451644, rho = -0.165052
+nSV = 2050, nBSV = 40
+Total nSV = 2050
+Accuracy = 74.6835% (177/237) (classification)
+OURRESULT 5 4.5 train6 file5 74.6835
+....*.*
+optimization finished, #iter = 5905
+nu = 0.052528
+obj = -109551.658857, rho = -0.146141
+nSV = 2048, nBSV = 39
+Total nSV = 2048
+Accuracy = 68.9076% (164/238) (classification)
+OURRESULT 5 4.5 train7 file6 68.9076
+....*.*
+optimization finished, #iter = 5895
+nu = 0.049458
+obj = -99375.070883, rho = -0.199276
+nSV = 2044, nBSV = 36
+Total nSV = 2044
+Accuracy = 68.4874% (163/238) (classification)
+OURRESULT 5 4.5 train8 file7 68.4874
+....*..*
+optimization finished, #iter = 6018
+nu = 0.052737
+obj = -109283.472024, rho = -0.180166
+nSV = 2050, nBSV = 40
+Total nSV = 2050
+Accuracy = 71.0084% (169/238) (classification)
+OURRESULT 5 4.5 train9 file8 71.0084
+....*.*
+optimization finished, #iter = 5808
+nu = 0.049068
+obj = -97524.912762, rho = -0.166743
+nSV = 2052, nBSV = 32
+Total nSV = 2052
+Accuracy = 68.9076% (164/238) (classification)
+OURRESULT 5 4.5 train10 file9 68.9076
+....*..*
+optimization finished, #iter = 6034
+nu = 0.033790
+obj = -172841.612400, rho = -0.228092
+nSV = 2052, nBSV = 34
+Total nSV = 2052
+Accuracy = 73.1092% (174/238) (classification)
+OURRESULT 5 5.0 train1 file10 73.1092
+....*.*
+optimization finished, #iter = 5978
+nu = 0.034393
+obj = -177613.270730, rho = -0.171995
+nSV = 2051, nBSV = 34
+Total nSV = 2051
+Accuracy = 73.4177% (174/237) (classification)
+OURRESULT 5 5.0 train2 file1 73.4177
+....*..*
+optimization finished, #iter = 6237
+nu = 0.035120
+obj = -180467.621724, rho = -0.229134
+nSV = 2048, nBSV = 35
+Total nSV = 2048
+Accuracy = 70.0422% (166/237) (classification)
+OURRESULT 5 5.0 train3 file2 70.0422
+....*..*
+optimization finished, #iter = 6082
+nu = 0.033798
+obj = -172853.993983, rho = -0.251871
+nSV = 2048, nBSV = 33
+Total nSV = 2048
+Accuracy = 69.6203% (165/237) (classification)
+OURRESULT 5 5.0 train4 file3 69.6203
+....*..*
+optimization finished, #iter = 6168
+nu = 0.034286
+obj = -177583.452595, rho = -0.205232
+nSV = 2049, nBSV = 31
+Total nSV = 2049
+Accuracy = 72.9958% (173/237) (classification)
+OURRESULT 5 5.0 train5 file4 72.9958
+....*..*
+optimization finished, #iter = 6210
+nu = 0.032841
+obj = -166617.205211, rho = -0.224529
+nSV = 2049, nBSV = 36
+Total nSV = 2049
+Accuracy = 74.2616% (176/237) (classification)
+OURRESULT 5 5.0 train6 file5 74.2616
+....*..*
+optimization finished, #iter = 6128
+nu = 0.035310
+obj = -184255.926570, rho = -0.201221
+nSV = 2047, nBSV = 37
+Total nSV = 2047
+Accuracy = 67.6471% (161/238) (classification)
+OURRESULT 5 5.0 train7 file6 67.6471
+....*..*
+optimization finished, #iter = 6264
+nu = 0.031848
+obj = -160023.420169, rho = -0.255334
+nSV = 2044, nBSV = 33
+Total nSV = 2044
+Accuracy = 66.8067% (159/238) (classification)
+OURRESULT 5 5.0 train8 file7 66.8067
+....*..*
+optimization finished, #iter = 6245
+nu = 0.035079
+obj = -183371.649959, rho = -0.238061
+nSV = 2048, nBSV = 38
+Total nSV = 2048
+Accuracy = 67.2269% (160/238) (classification)
+OURRESULT 5 5.0 train9 file8 67.2269
+....*..*
+optimization finished, #iter = 6230
+nu = 0.031213
+obj = -154873.265384, rho = -0.225596
+nSV = 2052, nBSV = 27
+Total nSV = 2052
+Accuracy = 70.1681% (167/238) (classification)
+OURRESULT 5 5.0 train10 file9 70.1681
