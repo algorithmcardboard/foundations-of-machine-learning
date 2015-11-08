@@ -26,11 +26,14 @@ Installed the software from \url{http://www.csie.ntu.edu.tw/~cjlin/libsvm/}.  Th
 
 \noindent See the following command:
 \begin{lstlisting}[language=bash]
-  $ ./svm-scale -s splice_noise_train.txt.range  splice_noise_train.txt > splice_noise_train.txt.scale
-  $ ./svm-scale -r splice_noise_train.txt.range splice_noise_test.txt > splice_noise_test.txt.scale
+  $ ./svm-scale -s splice_noise_train.txt.range \ 
+  > splice_noise_train.txt > splice_noise_train.txt.scale
+  $ ./svm-scale -r splice_noise_train.txt.range \
+  > splice_noise_test.txt > splice_noise_test.txt.scale
 \end{lstlisting}
 
 \subsection*{3}
+Run training and test script\cite{cvscript}.
 \subsection*{4}
 \subsection*{5}
 \subsection*{6}
@@ -56,5 +59,9 @@ Installed the software from \url{http://www.csie.ntu.edu.tw/~cjlin/libsvm/}.  Th
       K(x,y) = \sum_{i=1}^{N} \cos^{n} (x_{i}^{2} - y_{i}^{2} ) \mathrm{is PDS.}
     \end{equation*}
 \end{description}
+
+\begin{thebibliography}{1}
+  \bibitem{cvscript} \url{https://github.com/rajegannathan/foudnations-of-machine-learning/blob/master/hw2/libsvm-3.20/tools/cross_validation.py}
+\end{thebibliography}
 
 \end{document}

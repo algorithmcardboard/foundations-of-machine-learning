@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.10.31)  8 NOV 2015 15:03
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.10.31)  8 NOV 2015 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,24 +259,20 @@ File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
-)
-Overfull \hbox (267.00623pt too wide) in paragraph at lines 29--30
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+) [2]
+Overfull \hbox (13.30452pt too wide) in paragraph at lines 64--65
+[]$\T1/lmtt/m/n/10 https : / / github . com / rajegannathan / foudnations-[]of-
+[]machine-[]learning /
  []
 
-
-Overfull \hbox (249.00604pt too wide) in paragraph at lines 30--31
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-[2] (./FML-FA15-HW2-ajr619.aux) ) 
+[3] (./FML-FA15-HW2-ajr619.aux) ) 
 Here is how much of TeX's memory you used:
- 3041 strings out of 493305
- 39168 string characters out of 6139896
- 117663 words of memory out of 5000000
- 6468 multiletter control sequences out of 15000+600000
+ 3042 strings out of 493305
+ 39178 string characters out of 6139896
+ 118666 words of memory out of 5000000
+ 6469 multiletter control sequences out of 15000+600000
  53032 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 32i,14n,51p,350b,976s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 32i,14n,51p,350b,982s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on FML-FA15-HW2-ajr619.dvi (2 pages, 4108 bytes).
+Output written on FML-FA15-HW2-ajr619.dvi (3 pages, 4640 bytes).
