@@ -44,15 +44,15 @@ Run training and test script\cite{cvscript} by editing the KERNEL\_DEGREE parame
 
 Filter the parameter and accuracy information from the run logs (deg1.out, deg3.out and deg5.out) by the command below.
 \begin{lstlisting}
-  \$ cat deg1.out | grep OUR | cut -d' ' \
+  $ cat deg1.out | grep OUR | cut -d' ' \
   > -f2,3,4,5,6 > deg1.out.filtered
-  \$ cat deg3.out | grep OUR | cut -d' ' \
+  $ cat deg3.out | grep OUR | cut -d' ' \
   > -f2,3,4,5,6 > deg3.out.filtered
-  \$ cat deg5.out | grep OUR | cut -d' ' \
+  $ cat deg5.out | grep OUR | cut -d' ' \
   > -f2,3,4,5,6 > deg5.out.filtered
 \end{lstlisting}
 
-Use plotter.py\cite{plotterpy} to create plots from the output values for KERNEL\_DEGREE values 1, 3, 5.  The output will be saved as deg1.pdf, deg3.pdf and deg5.pdf.  All the three plots are embedded below one after the other.
+Use plotter.py\cite{plotterpy} to create plots from the output values for KERNEL\_DEGREE values 1, 3, 5.  The output will be saved as deg1.pdf, deg3.pdf and deg5.pdf.  All the three plots are embedded below one after the other.  The dotted red line corresponds to -1 standard deviation.  The dotted green line corresponds to +1 standard deviation and the black continuous line corresponds to the Mean.
 \includepdf[pages={1},lastpage={1}]{libsvm-3.20/tools/deg1.pdf}
 \includepdf[pages={1},lastpage={1}]{libsvm-3.20/tools/deg3.pdf}
 \includepdf[pages={1},lastpage={1}]{libsvm-3.20/tools/deg5.pdf}
@@ -80,7 +80,7 @@ After manually populating d, cross-train accuracy, test accuracy, nSV, nBSV, rho
   5 & 2132.4 & 1937.4 & 195.0 & 2368 & 2150 & 218 \\
 \end{tabular}
 
-Soft margin is given by the rho margin.  Svm-train outputs negative margin values (rho). We use \(-1 * \mathrm{rho} \) values to plot the soft margins in our plots.
+Soft margin is given by the rho value.  Svm-train outputs negative margin values (rho). We use \(-1 * \mathrm{rho} \) values to plot the soft margins in our plots.
 The plots generated are as shown below.
 
 \includepdf[pages={1},lastpage={1}]{libsvm-3.20/tools/ques4_1.pdf}
@@ -101,7 +101,7 @@ gives us Accuracy = 80.125\% (641/800) (classification)
 
 The best accuracy we got with polynomial kernel SVM is 76.125 for \( C^{*} = 5^{1.0} \) with degree \( d^{*} = 3 \).
 
-The value of soft margin (rho) is 0.586184.
+The value of soft margin (rho) for the rbf kernel SVM is 0.586184.
 
 \subsection*{6}
 
