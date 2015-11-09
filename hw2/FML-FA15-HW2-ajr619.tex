@@ -6,7 +6,7 @@
 \usepackage{listings}
 \usepackage{fancyhdr}
 \usepackage{hyperref}
-\usepackage{graphicx}
+\usepackage{pdfpages}
 
 \pagestyle{fancy}
 \lhead{Anirudhan J Rajagopalan - ajr619 - N18824115} % chktex 8
@@ -53,7 +53,9 @@ Filter the parameter and accuracy information from the run logs (deg1.out, deg3.
 \end{lstlisting}
 
 Use plotter.py\cite{plotterpy} to create plots from the output values for KERNEL\_DEGREE values 1, 3, 5.  The output will be saved as deg1.png, deg3.png and deg5.png.  All the three plots are embedded below one after the other.
-\includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{./libsvm-3.20/tools/deg1.png}
+\includepdf[pages={1}]{libsvm-3.20/tools/deg1.pdf}
+\includepdf[pages={1}]{libsvm-3.20/tools/deg3.pdf}
+\includepdf[pages={1}]{libsvm-3.20/tools/deg5.pdf}
 \subsection*{4}
 \subsection*{5}
 \subsection*{6}

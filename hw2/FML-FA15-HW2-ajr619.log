@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.31)  8 NOV 2015 15:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.31)  8 NOV 2015 16:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -288,6 +288,50 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip55
 )
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count117
+\calc@Bcount=\count118
+\calc@Adimen=\dimen120
+\calc@Bdimen=\dimen121
+\calc@Askip=\skip56
+\calc@Bskip=\skip57
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count119
+\calc@Cskip=\skip58
+)
+(/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count120
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -301,13 +345,17 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 91.
-
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count117
-))
-\Gin@req@height=\dimen120
-\Gin@req@width=\dimen121
+)
+\Gin@req@height=\dimen122
+\Gin@req@width=\dimen123
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box30
+\AM@toc@title=\toks21
+\c@AM@survey=\count121
+\AM@templatesizebox=\box31
 )
 (./FML-FA15-HW2-ajr619.aux)
 \openout1 = `FML-FA15-HW2-ajr619.aux'.
@@ -330,8 +378,8 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 14.
  (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-\c@lstlisting=\count118
-\AtBeginShipoutBox=\box30
+\c@lstlisting=\count122
+\AtBeginShipoutBox=\box32
 Package hyperref Info: Link coloring OFF on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -340,7 +388,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count119
+\c@section@level=\count123
 )
 LaTeX Info: Redefining \ref on input line 14.
 LaTeX Info: Redefining \pageref on input line 14.
@@ -353,17 +401,17 @@ LaTeX Info: Redefining \nameref on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
-\scratchdimen=\dimen122
-\scratchbox=\box31
-\nofMPsegments=\count121
-\nofMParguments=\count122
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count123
-\MPscratchDim=\dimen123
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count124
+\scratchdimen=\dimen124
+\scratchbox=\box33
+\nofMPsegments=\count125
+\nofMParguments=\count126
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count127
+\MPscratchDim=\dimen125
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
+\everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -446,46 +494,163 @@ Overfull \hbox (21.00372pt too wide) in paragraph at lines 42--43
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<./libsvm-3.20/tools/deg1.png, id=16, 578.16pt x 433.62pt>
-File: ./libsvm-3.20/tools/deg1.png Graphic file (type png)
+<libsvm-3.20/tools/deg1.pdf, id=16, 578.16pt x 433.62pt>
+File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
 
-<use ./libsvm-3.20/tools/deg1.png>
-Package pdftex.def Info: ./libsvm-3.20/tools/deg1.png used on input line 56.
-(pdftex.def)             Requested size: 276.00105pt x 206.9972pt.
+<use libsvm-3.20/tools/deg1.pdf>
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf used on input line 56.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
+ <use libsvm-3.20/tools/deg1.pdf>
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf used on input line 56.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 
-Overfull \hbox (12.98645pt too wide) in paragraph at lines 55--57
+Overfull \hbox (12.98645pt too wide) in paragraph at lines 55--56
 []\T1/lmr/m/n/10 Use plotter.py[[]] to cre-ate plots from the out-put val-ues f
 or KER-NEL_DEGREE
  []
 
+[2] <libsvm-3.20/tools/deg1.pdf, id=49, page=1, 578.16pt x 433.62pt>
+File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
 
-Overfull \hbox (169.40854pt too wide) in paragraph at lines 55--57
-\T1/lmr/m/n/10 the three plots are em-bed-ded be-low one af-ter the other. [] 
- []
+<use libsvm-3.20/tools/deg1.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
+6.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
 
-[2]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 84.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+<use libsvm-3.20/tools/deg1.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
+6.
+(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
+File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg1.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
+6.
+(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
+File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg1.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
+6.
+(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
+File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg1.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
+6.
+(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
+ [3 <./libsvm-3.20/tools/deg1.pdf>]
+<libsvm-3.20/tools/deg3.pdf, id=102, 578.16pt x 433.62pt>
+File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg3.pdf>
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf used on input line 57.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
+ <use libsvm-3.20/tools/deg3.pdf>
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf used on input line 57.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+
+<libsvm-3.20/tools/deg3.pdf, id=105, page=1, 578.16pt x 433.62pt>
+File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg3.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
+7.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg3.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
+7.
+(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
+File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg3.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
+7.
+(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
+File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg3.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
+7.
+(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
+File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg3.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
+7.
+(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
+ [4 <./libsvm-3.20/tools/deg3.pdf>]
+<libsvm-3.20/tools/deg5.pdf, id=157, 578.16pt x 433.62pt>
+File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg5.pdf>
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf used on input line 58.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
+ <use libsvm-3.20/tools/deg5.pdf>
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf used on input line 58.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+
+<libsvm-3.20/tools/deg5.pdf, id=160, page=1, 578.16pt x 433.62pt>
+File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg5.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
+8.
+(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
+File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg5.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
+8.
+(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
+File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg5.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
+8.
+(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
+File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg5.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
+8.
+(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
+File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
+
+<use libsvm-3.20/tools/deg5.pdf, page 1>
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
+8.
+(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
+ [5 <./libsvm-3.20/tools/deg5.pdf>]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 86.
+
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [3 <./libsvm-3.20/tools/deg1.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 90.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 90.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
  (./FML-FA15-HW2-ajr619.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 90.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 90.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `FML-FA15-HW2-ajr619.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 90.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 7768 strings out of 493304
- 110750 string characters out of 6139870
- 224063 words of memory out of 5000000
- 11081 multiletter control sequences out of 15000+600000
+ 8906 strings out of 493304
+ 126937 string characters out of 6139870
+ 247239 words of memory out of 5000000
+ 12188 multiletter control sequences out of 15000+600000
  53032 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 32i,14n,51p,272b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,18n,51p,272b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
@@ -498,10 +663,10 @@ public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
 s/msbm10.pfb>
-Output written on FML-FA15-HW2-ajr619.pdf (4 pages, 230193 bytes).
+Output written on FML-FA15-HW2-ajr619.pdf (6 pages, 236562 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 292 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
+ 39 named destinations out of 1000 (max. 500000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

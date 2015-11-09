@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-KERNEL_DEGREE = 5
+KERNEL_DEGREE = 5 
 FILE_NAME = "deg" + str(KERNEL_DEGREE)
 
 X = pd.read_csv(FILE_NAME+'.out.filtered', sep=' ')
@@ -33,4 +33,4 @@ plt.title('Polynomial Kernels, degree = '+str(KERNEL_DEGREE))
 plt.ylabel('Cross validation error')
 plt.xlabel(r'$\log_{5}{C}}$')
 
-plt.savefig('./deg{0}.png'.format(KERNEL_DEGREE))
+plt.savefig('./deg{0}.pdf'.format(KERNEL_DEGREE))
