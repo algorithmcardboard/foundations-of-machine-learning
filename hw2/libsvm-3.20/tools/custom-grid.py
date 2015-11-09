@@ -139,7 +139,7 @@ def redraw(db,best_param,gnuplot,options,tofile=False):
 				  at screen 0.5,0.85 center\n". \
 				  format(best_log2c, best_log2g, best_rate).encode())
 	gnuplot.write("set label \"C = {0}  gamma = {1}\""
-				  " at screen 0.5,0.8 center\n".format(2**best_log2c, 2**best_log2g).encode())
+				  " at screen 0.5,0.8 center\n".format(5**best_log2c, 2**best_log2g).encode())
 	gnuplot.write(b"set key at screen 0.9,0.9\n")
 	gnuplot.write(b"splot \"-\" with lines\n")
 	
@@ -259,7 +259,7 @@ class Worker(Thread):
 			try:
 				c, g = None, None
 				if cexp != None:
-					c = 2.0**cexp
+					c = 5.0**cexp
 				if gexp != None:
 					g = 2.0**gexp
 				rate = self.run_one(c,g)
@@ -345,7 +345,7 @@ def find_parameters(dataset_pathname, options=''):
 			(worker,' '.join(str(x) for x in [c,g] if x is not None),rate)
 		output_str = ''
 		if c != None:
-			stdout_str += 'c={0}, '.format(2.0**best_c)
+			stdout_str += 'c={0}, '.format(5.0**best_c)
 			output_str += 'log2c={0} '.format(c)
 		if g != None:
 			stdout_str += 'g={0}, '.format(2.0**best_g)
@@ -450,8 +450,8 @@ def find_parameters(dataset_pathname, options=''):
 	job_queue.put((WorkerStopToken,None))
 	best_param, best_cg  = {}, []
 	if best_c != None:
-		best_param['c'] = 2.0**best_c
-		best_cg += [2.0**best_c]
+		best_param['c'] = 5.0**best_c
+		best_cg += [5.0**best_c]
 	if best_g != None:
 		best_param['g'] = 2.0**best_g
 		best_cg += [2.0**best_g]
