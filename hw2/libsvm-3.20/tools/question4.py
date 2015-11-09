@@ -6,7 +6,7 @@ X['cverror'] = 1 - (X['cvaccuracy']/100)
 X['terror'] = 1 - (X['testaccuracy']/100)
 
 fig = plt.figure()
-fig.set_size_inches(8.5,11)
+fig.set_size_inches(11,15)
 ax1 = fig.add_subplot(221)
 ax3 = fig.add_subplot(223)
 
