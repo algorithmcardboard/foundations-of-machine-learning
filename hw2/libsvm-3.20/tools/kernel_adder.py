@@ -15,17 +15,30 @@ negSigmaSq = sigma * sigma * -1;
 
 X, Y = datasets.load_svmlight_file(SPLICE_LOCATION+FILE_NAME)
 
-K = []
+SUM = []
+GAUSSIAN = []
+POLY = []
 
 for i in range(0,X.shape[0]):
-    row_matrix = []
-    row_matrix.append(i+1)
+    sum_matrix = []
+    poly_matrix = []
+    gaussian_matrix = []
+
+    sum_matrix.append(i+1)
     for j in range(0,X.shape[0]):
         polynomial = (X[i].dot(X[j].transpose()) ** DEGREE )[0,0]
         gaussian = math.exp(LA.norm( (X[j] - X[i]).data, ord=2)**2/negSigmaSq)
         total = polynomial + gaussian
-        row_matrix.append(total)
-        print "computed for [{0} ,{1}] = {2} {3} {4}".format(i, j, total, polynomial, gaussian)
-    K.append(row_matrix)
 
-datasets.dump_svmlight_file(K, Y, 'ques6.kernel')
+        sum_matrix.append(total)
+        poly_matrix.append(polynomial)
+        gaussian_matrix.append(gaussian)
+
+        print "computed for [{0} ,{1}] = {2} {3} {4}".format(i, j, total, polynomial, gaussian)
+    SUM.append(sum_matrix)
+    POLY.append(poly_matrix)
+    GAUSSIAN.append(gaussian_matrix)
+
+datasets.dump_svmlight_file(SUM, Y, 'ques6.sum.kernel')
+datasets.dump_svmlight_file(GAUSSIAN, Y, 'ques6.gaussian.kernel')
+datasets.dump_svmlight_file(POLY, Y, 'ques6.polynomial.kernel')
