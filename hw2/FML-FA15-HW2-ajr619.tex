@@ -69,8 +69,9 @@ The best C measured in the cross-validation set is \( C^{*} = 5^{1.0} \) with de
 \subsection*{4}
 The average number of SV and BSV are taken across the cross validation sets. numMarginal represents the average number of marginal support vectors.
 
-
 nSV and nBSV represent the number of support vectors and bounded support vectors in test set.  Marginal represents the number of support vectors in test set.
+
+After manually populating d, cross-train accuracy, test accuracy, nSV, nBSV, rho, totalSV, totalBSV into a file\cite{ques4file}, we run a script\cite{ques4py} to generate the plots as a pdf file.
 
 \begin{tabular}{*{7}{c}}
   D & Avg Sv & Avg BSV & numMarginal & nSv & nBSV & marginal \\
@@ -78,6 +79,8 @@ nSV and nBSV represent the number of support vectors and bounded support vectors
   3 & 1990.5 & 1042.7 & 947.8 & 2183 & 1138 & 1045 \\
   5 & 2132.4 & 1937.4 & 195.0 & 2368 & 2150 & 218 \\
 \end{tabular}
+
+The plots generated are as shown below
 
 \includepdf[pages={1},lastpage={1}]{libsvm-3.20/tools/ques4_1.pdf}
 \subsection*{5}
@@ -110,6 +113,8 @@ nSV and nBSV represent the number of support vectors and bounded support vectors
   \bibitem{libsvm} \url{http://www.csie.ntu.edu.tw/~cjlin/libsvm/}
   \bibitem{cvscript} \url{http://git.io/v80yY}
   \bibitem{plotterpy} \url{http://git.io/v80yk}
+  \bibitem{ques4file} \url{http://git.io/v8Edr}
+  \bibitem{ques4py} \url{http://git.io/v8EdH}
 \end{thebibliography}
 
 \end{document}
