@@ -14,7 +14,7 @@
 \begin{document}
 
 \title{Foundations of Machine Learning --- Homework Assignment 1}
-\date{October 11, 2015}
+\date{November 08, 2015}
 \author{Anirudhan J Rajagopalan\\ N18824115\\ ajr619}
 
 \maketitle
@@ -80,7 +80,8 @@ After manually populating d, cross-train accuracy, test accuracy, nSV, nBSV, rho
   5 & 2132.4 & 1937.4 & 195.0 & 2368 & 2150 & 218 \\
 \end{tabular}
 
-The plots generated are as shown below
+Soft margin is given by the rho margin.  svm-train outputs negative margin values (rho). We use \(-1 * \mathrm{rho} \) values to plot the soft margins in our plots.
+The plots generated are as shown below.
 
 \includepdf[pages={1},lastpage={1}]{libsvm-3.20/tools/ques4_1.pdf}
 \subsection*{5}
@@ -109,8 +110,8 @@ The plots generated are as shown below
 \end{description}
 
 \begin{thebibliography}{1}
-  \bibitem{githuburl} \url{http://git.io/v80yn}
   \bibitem{libsvm} \url{http://www.csie.ntu.edu.tw/~cjlin/libsvm/}
+  \bibitem{githuburl} \url{http://git.io/v80yn}
   \bibitem{cvscript} \url{http://git.io/v80yY}
   \bibitem{plotterpy} \url{http://git.io/v80yk}
   \bibitem{ques4file} \url{http://git.io/v8Edr}

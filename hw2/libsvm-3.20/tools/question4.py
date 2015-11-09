@@ -39,6 +39,6 @@ nBSV = ax4.scatter(X['d'], X['nBSV'], color='black', marker='*', label='nBSV')
 ax4.set_xlabel('Polynomial Kernel degree')
 ax4.set_ylabel('number of support vectors')
 ax4.set_title(r'CV error, $\log_{5}{C} = 1.0$')
-ax4.legend((nSV, nBSV), ('Avg SV', 'Avg BSV'), scatterpoints=1, loc='upper left')
+ax4.legend((nSV, nBSV), ('nSV', 'nBSV'), scatterpoints=1, loc='upper left')
 
 plt.savefig('ques4_1.pdf')

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.31)  8 NOV 2015 20:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.31)  8 NOV 2015 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -637,11 +637,11 @@ Overfull \hbox (0.55559pt too wide) in paragraph at lines 74--75
 File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/ques4_1.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf used on input line 85.
+Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf used on input line 86.
 (pdftex.def)             Requested size: 794.96806pt x 1084.04736pt.
 File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
  <use libsvm-3.20/tools/ques4_1.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf used on input line 85.
+Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf used on input line 86.
 (pdftex.def)             Requested size: 794.96806pt x 1084.04736pt.
 
 [6] <libsvm-3.20/tools/ques4_1.pdf, id=229, page=1, 794.97pt x 1084.05pt>
@@ -649,53 +649,53 @@ File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/ques4_1.pdf, page 1>
 Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf, page1 used on input lin
-e 85.
+e 86.
 (pdftex.def)             Requested size: 794.96806pt x 1084.04736pt.
 File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/ques4_1.pdf, page 1>
 Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf, page1 used on input lin
-e 85.
+e 86.
 (pdftex.def)             Requested size: 582.99194pt x 794.98901pt.
 File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/ques4_1.pdf, page 1>
 Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf, page1 used on input lin
-e 85.
+e 86.
 (pdftex.def)             Requested size: 582.99194pt x 794.98901pt.
 File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/ques4_1.pdf, page 1>
 Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf, page1 used on input lin
-e 85.
+e 86.
 (pdftex.def)             Requested size: 582.99194pt x 794.98901pt.
 File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/ques4_1.pdf, page 1>
 Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf, page1 used on input lin
-e 85.
+e 86.
 (pdftex.def)             Requested size: 582.99194pt x 794.98901pt.
  [7 <./libsvm-3.20/tools/ques4_1.pdf>]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 112.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 113.
 
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 120.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 121.
  [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 120.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 121.
  (./FML-FA15-HW2-ajr619.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 120.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 120.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 121.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 121.
 Package rerunfilecheck Info: File `FML-FA15-HW2-ajr619.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 120.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 121.
  ) 
 Here is how much of TeX's memory you used:
- 8922 strings out of 493304
- 127277 string characters out of 6139870
+ 8921 strings out of 493304
+ 127267 string characters out of 6139870
  247299 words of memory out of 5000000
- 12198 multiletter control sequences out of 15000+600000
+ 12197 multiletter control sequences out of 15000+600000
  53032 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  39i,18n,51p,272b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -711,7 +711,7 @@ public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on FML-FA15-HW2-ajr619.pdf (8 pages, 266504 bytes).
+Output written on FML-FA15-HW2-ajr619.pdf (8 pages, 266681 bytes).
 PDF statistics:
  390 PDF objects out of 1000 (max. 8388607)
  190 compressed objects within 2 object streams
