@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.31)  8 NOV 2015 16:05
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.10.31)  8 NOV 2015 16:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -191,7 +191,7 @@ Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -204,7 +204,7 @@ Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
+Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
 Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
 Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
 )
@@ -274,12 +274,20 @@ LaTeX Info: Redefining \pageref on input line 6369.
 \c@Hfootnote=\count114
 )
 
-Package hyperref Message: Driver (autodetected): hpdftex.
+Package hyperref Message: Driver (default): hdvips.
 
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count115
-\c@bookmark@seq@number=\count116
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2012/11/06 v6.83m Hyperref driver for dvips
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2012/11/06 v6.83m Hyperref definitions for pdfmark specials
+\pdf@docset=\toks21
+\pdf@box=\box30
+\pdf@toks=\toks22
+\pdf@defaulttoks=\toks23
+\HyField@AnnotCount=\count115
+\Fld@listcount=\count116
+\c@bookmark@seq@number=\count117
 
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -287,7 +295,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip55
-)
+))
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2013/08/25 v0.4v Insert pages of external PDF documents (AM)
 
@@ -296,15 +304,15 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count117
-\calc@Bcount=\count118
+\calc@Acount=\count118
+\calc@Bcount=\count119
 \calc@Adimen=\dimen120
 \calc@Bdimen=\dimen121
 \calc@Askip=\skip56
 \calc@Bskip=\skip57
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count119
+\calc@Ccount=\count120
 \calc@Cskip=\skip58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/eso-pic/eso-pic.sty
@@ -316,14 +324,12 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: dvips.def on input line 225.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-\Gread@gobject=\count120
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -344,20 +350,28 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: dvips.def on input line 91.
 )
 \Gin@req@height=\dimen122
 \Gin@req@width=\dimen123
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pdfpages/pppdftex.def
 File: pppdftex.def 2013/08/25 v0.4v Pdfpages driver for pdfTeX (AM)
-)
-\AM@pagebox=\box30
-\AM@toc@title=\toks21
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdfpages/ppnull.def
+File: ppnull.def 2013/08/25 v0.4v Pdfpages dummy driver (AM)
+
+
+Package pdfpages Warning: I will use a dummy \includepdf command
+(pdfpages)                which will NOT insert any pages, because
+(pdfpages)                you are producing DVI output.
+
+))
+\AM@pagebox=\box31
+\AM@toc@title=\toks24
 \c@AM@survey=\count121
-\AM@templatesizebox=\box31
-)
-(./FML-FA15-HW2-ajr619.aux)
+\AM@templatesizebox=\box32
+) (./FML-FA15-HW2-ajr619.aux)
 \openout1 = `FML-FA15-HW2-ajr619.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
@@ -379,7 +393,7 @@ LaTeX Font Info:    Try loading font information for T1+lmr on input line 14.
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \c@lstlisting=\count122
-\AtBeginShipoutBox=\box32
+\AtBeginShipoutBox=\box33
 Package hyperref Info: Link coloring OFF on input line 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -398,35 +412,6 @@ LaTeX Info: Redefining \nameref on input line 14.
 \@outlinefile=\write3
 \openout3 = `FML-FA15-HW2-ajr619.out'.
 
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count124
-\scratchdimen=\dimen124
-\scratchbox=\box33
-\nofMPsegments=\count125
-\nofMParguments=\count126
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count127
-\MPscratchDim=\dimen125
-\MPnumerator=\count128
-\makeMPintoPDFobject=\count129
-\everyMPtoPDFconversion=\toks23
-) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-)
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 21.
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
@@ -466,7 +451,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+]
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
@@ -481,192 +466,48 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 31.
 
 Overfull \hbox (21.00372pt too wide) in paragraph at lines 40--41
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (21.00372pt too wide) in paragraph at lines 41--42
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
 Overfull \hbox (21.00372pt too wide) in paragraph at lines 42--43
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<libsvm-3.20/tools/deg1.pdf, id=16, 578.16pt x 433.62pt>
-File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg1.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf used on input line 56.
-(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
-File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
- <use libsvm-3.20/tools/deg1.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf used on input line 56.
-(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 
 Overfull \hbox (12.98645pt too wide) in paragraph at lines 55--56
 []\T1/lmr/m/n/10 Use plotter.py[[]] to cre-ate plots from the out-put val-ues f
 or KER-NEL_DEGREE
  []
 
-[2] <libsvm-3.20/tools/deg1.pdf, id=49, page=1, 578.16pt x 433.62pt>
-File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg1.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
-6.
-(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
-File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg1.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
-6.
-(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
-File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg1.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
-6.
-(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
-File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg1.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
-6.
-(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
-File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg1.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
-6.
-(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
- [3 <./libsvm-3.20/tools/deg1.pdf>]
-<libsvm-3.20/tools/deg3.pdf, id=102, 578.16pt x 433.62pt>
-File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg3.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf used on input line 57.
-(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
-File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
- <use libsvm-3.20/tools/deg3.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf used on input line 57.
-(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
-
-<libsvm-3.20/tools/deg3.pdf, id=105, page=1, 578.16pt x 433.62pt>
-File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg3.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
-7.
-(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
-File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg3.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
-7.
-(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
-File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg3.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
-7.
-(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
-File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg3.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
-7.
-(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
-File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg3.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
-7.
-(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
- [4 <./libsvm-3.20/tools/deg3.pdf>]
-<libsvm-3.20/tools/deg5.pdf, id=157, 578.16pt x 433.62pt>
-File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg5.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf used on input line 58.
-(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
-File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
- <use libsvm-3.20/tools/deg5.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf used on input line 58.
-(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
-
-<libsvm-3.20/tools/deg5.pdf, id=160, page=1, 578.16pt x 433.62pt>
-File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg5.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
-8.
-(pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
-File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg5.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
-8.
-(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
-File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg5.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
-8.
-(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
-File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg5.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
-8.
-(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
-File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
-
-<use libsvm-3.20/tools/deg5.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
-8.
-(pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
- [5 <./libsvm-3.20/tools/deg5.pdf>]
+[2] [3] [4] [5]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 86.
-
-(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 92.
  [6]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 92.
- (./FML-FA15-HW2-ajr619.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 92.
+
+(./FML-FA15-HW2-ajr619.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 92.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 92.
 Package rerunfilecheck Info: File `FML-FA15-HW2-ajr619.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 92.
  ) 
 Here is how much of TeX's memory you used:
- 8906 strings out of 493304
- 126937 string characters out of 6139870
- 247239 words of memory out of 5000000
- 12188 multiletter control sequences out of 15000+600000
+ 8344 strings out of 493305
+ 118559 string characters out of 6139896
+ 240629 words of memory out of 5000000
+ 11683 multiletter control sequences out of 15000+600000
  53032 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 39i,18n,51p,272b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
-ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
-/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
--mathsy.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texm
-f/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi
-10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb></usr/share/texmf/font
-s/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb><
-/usr/share/texmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/
-public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/sha
-re/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/
-lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
-s/msbm10.pfb>
-Output written on FML-FA15-HW2-ajr619.pdf (6 pages, 236562 bytes).
-PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 158 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 37i,14n,51p,274b,1041s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+Output written on FML-FA15-HW2-ajr619.dvi (6 pages, 17984 bytes).
