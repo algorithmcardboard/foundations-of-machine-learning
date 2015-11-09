@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.31)  9 NOV 2015 09:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.31)  9 NOV 2015 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,10 +702,10 @@ Package rerunfilecheck Info: File `FML-FA15-HW2-ajr619.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
  ) 
 Here is how much of TeX's memory you used:
- 8936 strings out of 493304
- 127425 string characters out of 6139870
+ 8937 strings out of 493304
+ 127435 string characters out of 6139870
  247299 words of memory out of 5000000
- 12206 multiletter control sequences out of 15000+600000
+ 12207 multiletter control sequences out of 15000+600000
  53032 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  39i,18n,51p,446b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
