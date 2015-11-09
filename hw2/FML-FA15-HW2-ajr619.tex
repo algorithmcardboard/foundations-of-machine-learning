@@ -67,6 +67,19 @@ Best values of c for polynomial kernels 1, 3, 5 are:
 The best C measured in the cross-validation set is \( C^{*} = 5^{1.0} \) with degree \( d^{*} = 3 \) which gives an average error of \( 23.49\% \pm 2.65\% \)
 
 \subsection*{4}
+The average number of SV and BSV are taken across the cross validation sets. numMarginal represents the average number of marginal support vectors.
+
+
+nSV and nBSV represent the number of support vectors and bounded support vectors in test set.  Marginal represents the number of support vectors in test set.
+
+\begin{tabular}{*{7}{c}}
+  D & Avg Sv & Avg BSV & numMarginal & nSv & nBSV & marginal \\
+  1 & 1241.3 & 1175.4 & 65.9 & 1377 & 1309 & 68 \\
+  3 & 1990.5 & 1042.7 & 947.8 & 2183 & 1138 & 1045 \\
+  5 & 2132.4 & 1937.4 & 195.0 & 2368 & 2150 & 218 \\
+\end{tabular}
+
+\includepdf[pages={1},lastpage={1}]{libsvm-3.20/tools/ques4_1.pdf}
 \subsection*{5}
 \subsection*{6}
 
