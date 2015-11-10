@@ -5,39 +5,35 @@ import numpy as np
 import math
 
 SPLICE_LOCATION = "/home/anirudhan/workspace/foudnations-of-machine-learning/hw2/libsvm-3.20/tools/splice_hw/"
-FILE_NAME = "splice_noise_train.txt.scale"
-
-GAMMA = 0.03125
 DEGREE = 3
-C = 5
 
-sigma = math.sqrt(1/(2 * GAMMA))
+sigma = math.sqrt(1/(2 * 0.03125))
 negSigmaSq = sigma * sigma * -1;
 
-X, Y = datasets.load_svmlight_file(SPLICE_LOCATION+FILE_NAME)
+X, Y = datasets.load_svmlight_file(SPLICE_LOCATION+ "splice_noise_train.txt.scale")
 X = X.toarray()
 
 gamma = 1.0/X.shape[1]
 pairwise_dists = squareform(pdist(X, 'euclidean'))
 
-GAUSSIAN = scip.exp(pairwise_dists ** 2 / negSigmaSq)
-#GAUSSIAN = np.insert(GAUSSIAN, 0, np.arange(1, X.shape[0]+1), axis=1)
+k_g = scip.exp(pairwise_dists ** 2 / negSigmaSq)
 
-POLY = np.dot(X, X.T)
-POLY = np.multiply(POLY, gamma)
-POLY = np.power(POLY, DEGREE)
-#POLY = np.insert(POLY, 0, np.arange(1, X.shape[0]+1), axis=1)
+k_p = np.dot(X, X.T)
+k_p = np.multiply(k_p, gamma)
+k_p = np.power(k_p, DEGREE)
 
-print "shape of poly is {0}".format(POLY.shape)
+k_sum = k_g+ k_p
 
-print "shape of gaussian is {0}".format(GAUSSIAN.shape)
+Xt, Yt = datasets.load_svmlight_file(SPLICE_LOCATION+"splice_noise_test.txt.scale")
+Xt = Xt.toarray()
 
-print "found gaussian and poly"
-SUM = GAUSSIAN + POLY
+t_gamma = 1.0/Xt.shape[1]
+t_pairwise = squareform(pdist(Xt, 'euclidean'))
 
-datasets.dump_svmlight_file(SUM, Y, 'ques6.sum.kernel')
-print "finished dumping sum kernel"
-datasets.dump_svmlight_file(GAUSSIAN, Y, 'ques6.gaussian.kernel')
-print "finished dumping gaussian kernel"
-datasets.dump_svmlight_file(POLY, Y, 'ques6.polynomial.kernel')
-print "finished dumping polynomial kernel"
+k_gt = scip.exp(t_pairwise** 2 / negSigmaSq)
+
+k_pt = np.dot(Xt, Xt.T)
+k_pt = np.multiply(k_pt, t_gamma)
+k_pt = np.power(k_pt, DEGREE)
+
+k_sum_t = k_gt + k_pt
