@@ -21,6 +21,67 @@
 
 \newpage
 
+\section*{A. VC-dimension of convex combinations}
+\subsection*{1}
+\begin{description}
+  \item{Given:}
+    H is a family of functions mapping from input space X to {-1, +1}. T is a positive integer.\\
+    Family of functions \begin{equation}
+      \mathcal{F}_{T} = \{ sgn(\sum_{t=1}^{T} \alpha_{t}h_{t}): h_{t} \in H, \alpha_{t} \ge 0, \sum_{t=1}^{T} \alpha_{t} \le 1 \}
+    \end{equation}
+  \item{To find:} The upper bound on the VC-dimension of the family of the functions $ \mathcal{F}_{T} $.
+  \item{Solution}
+    As given in the hint, if we consider the above as a neural network, we can think of the intermediate layers as representing the functions $ h_{1}, h_{2}, ... h_{t}$ in the hypotheis set.  By the same thought, we can see the output layer as representing the affine sgn() function.
+
+    Let $ \prod_{H}(m) $ denote the grown function.
+
+    Given a concept class C, the output node can generate atmost $\prod_{C}(m)$ labelings for a fixed set of intermediate layers.  Also, the intermediate layer can have $ \prod_{H} \prod_{H}(m) $ possible set of values at the intermediate layers.  Thus the total number of possible outputs from the network is 
+    \begin{equation}
+      \prod_{\mathcal{F}}(m)  \le \prod_{c}(m) \times \prod_{H}\prod_{H}(m)
+    \end{equation}
+
+    Since sgn is an affine function, its VC dimension is T+1.
+    \begin{align*}
+      \prod_{c}(m) \le& (\frac{em}{T+1})^{T+1}\\
+      \prod_{H}(m) \le& (\frac{em}{d})^{d}\\
+      \prod_{F}(m) \le& (\frac{em}{T+1})^{T+1}.((\frac{em}{d})^{d})^{T}\\
+      \le& (em)^{T+1}(\frac{em}{d+1})^{dT}
+    \end{align*}
+    Let $d^{'} = d+1$;  $ T^{'} = T+1$
+
+    \begin{align*}
+      \prod_{F}(m) \le& (\frac{em}{d^{'}})^{T^{'}d^{'}}
+    \end{align*}
+    Let $m = 2T^{'}d^{'} \log_{2}{eT^{'}} $
+
+    Now, 
+    \begin{equation}
+      m = 2\log_{2}{xy} => m \ge x\log_{2}(ym) \forall m \ge 1
+    \end{equation}
+    and x, y > 0 with xy > 4.
+
+    => $ m \ge d^{'}T^{'}\log_{2}(\frac{em}{d^{'}})$ where x = $ T^{'}d^{'}$ and y = $ \frac{e}{d^{'}}$
+    => $2^{m} \ge (\frac{em}{d^{'}})^{T^{'}d^{'}}$
+
+    => VCdim(F) $\le$ 2(T+1)(d+1)$\log_{2}(e(T+1)) $
+\end{description}
+
+\section*{B. Growth Functions}
+\subsection*{1}
+This is solved by referencing \\ \url{http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.366.5645&rep=rep1&type=pdf}
+
+The set W of separating vectors for ${ X+, X-}$ is given by 
+$W= { w: w.x>0, x \in X+ ;  w.x \le 0, x \in X-}$
+
+The dichotomy \{X+ $\cup$\{$x_{m+1}$\}, X- \}  is homogeneously linearly separable iff there exists a w in W such that wy>0; and the dichotomy \{X+, X-$\cup$ \{$x_{m+1}$\}\} is homogeneously linearly separable if and only if there exists a w in W such that w.y < 0 
+
+
+If \{\{ X+ $\cup$ \{ $x_{m+1}$ \}, X- \} and \{ X+, X- $\cup$ \{ $x_{m+1}$ \}\} are homogeneously linearly separable by w1 and w2, respectively, then w*=(-w2. $x_{m+1}$)w1 +(w1.$x_{m+1}$)w2 separates \{X+, X-;\} by the hyperplane \{x: w*.x= 0\} passing through y.
+
+  Conversely, if \{X+, X- \} is homogeneously linearly separable by a hyperplane containing $x_{m+1}$, then there exists a w* $\in$ W such that w* $x_{m+1}$ =0. Since W is open, there exists an e> 0 such that w* +e .$x_{m+1}$  and w*-e.$x_{m+1}$  are in W.
+
+  Hence, \{\{ X+ $\cup$ \{ $x_{m+1}$ \}, X- \} and \{ X+, X- $\cup$ \{ $x_{m+1}$ \}\} are homogeneously linearly separable by w*+e.$x_{m+1}$  and w* - e.$x_{m+1}$, respectively.
+
 \section*{C. Support Vector Machines}
 \subsection*{1}
 Installed the software from\cite{libsvm}.  The installed version of software is also checked into github at\cite{githuburl}. 

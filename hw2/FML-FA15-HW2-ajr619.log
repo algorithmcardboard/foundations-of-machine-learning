@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.31)  9 NOV 2015 21:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.31)  9 NOV 2015 22:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -467,250 +467,259 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 29.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 29.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 29.
+ [2]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 71.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Overfull \hbox (1.499pt too wide) in paragraph at lines 71--72
+[]$\T1/lmtt/m/n/10 http : / / citeseerx . ist . psu . edu / viewdoc / download 
+? doi = 10 . 1 . 1 . 366 . 5645 &
+ []
+
+
+Overfull \hbox (99.50648pt too wide) in paragraph at lines 73--75
+[]\T1/lmr/m/n/10 The set W of sep-a-rat-ing vec-tors for $[]$ is given by $\OML
+/lmm/m/it/10 W \OT1/lmr/m/n/10 = []$ 
+ []
+
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2013/08/26 1.5b listings language file
-)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 31.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 31.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 31.
-
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 40--41
+) [3]
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 101--102
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 41--42
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 102--103
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (21.00372pt too wide) in paragraph at lines 42--43
+Overfull \hbox (21.00372pt too wide) in paragraph at lines 103--104
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<libsvm-3.20/tools/deg1.pdf, id=16, 578.16pt x 433.62pt>
+<libsvm-3.20/tools/deg1.pdf, id=53, 578.16pt x 433.62pt>
 File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg1.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf used on input line 56.
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf used on input line 117.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
  <use libsvm-3.20/tools/deg1.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf used on input line 56.
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf used on input line 117.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 
-Overfull \hbox (12.98645pt too wide) in paragraph at lines 55--56
+Overfull \hbox (12.98645pt too wide) in paragraph at lines 116--117
 []\T1/lmr/m/n/10 Use plotter.py[[]] to cre-ate plots from the out-put val-ues f
 or KER-NEL_DEGREE
  []
 
-[2] <libsvm-3.20/tools/deg1.pdf, id=49, page=1, 578.16pt x 433.62pt>
+[4] <libsvm-3.20/tools/deg1.pdf, id=74, page=1, 578.16pt x 433.62pt>
 File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg1.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
-6.
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 1
+17.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg1.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
-6.
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 1
+17.
 (pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
 File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg1.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
-6.
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 1
+17.
 (pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
 File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg1.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
-6.
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 1
+17.
 (pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
 File: libsvm-3.20/tools/deg1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg1.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 5
-6.
+Package pdftex.def Info: libsvm-3.20/tools/deg1.pdf, page1 used on input line 1
+17.
 (pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
- [3 <./libsvm-3.20/tools/deg1.pdf>]
-<libsvm-3.20/tools/deg3.pdf, id=102, 578.16pt x 433.62pt>
+ [5 <./libsvm-3.20/tools/deg1.pdf>]
+<libsvm-3.20/tools/deg3.pdf, id=127, 578.16pt x 433.62pt>
 File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg3.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf used on input line 57.
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf used on input line 118.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
  <use libsvm-3.20/tools/deg3.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf used on input line 57.
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf used on input line 118.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 
-<libsvm-3.20/tools/deg3.pdf, id=105, page=1, 578.16pt x 433.62pt>
+<libsvm-3.20/tools/deg3.pdf, id=130, page=1, 578.16pt x 433.62pt>
 File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg3.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
-7.
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 1
+18.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg3.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
-7.
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 1
+18.
 (pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
 File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg3.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
-7.
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 1
+18.
 (pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
 File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg3.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
-7.
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 1
+18.
 (pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
 File: libsvm-3.20/tools/deg3.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg3.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 5
-7.
+Package pdftex.def Info: libsvm-3.20/tools/deg3.pdf, page1 used on input line 1
+18.
 (pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
- [4 <./libsvm-3.20/tools/deg3.pdf>]
-<libsvm-3.20/tools/deg5.pdf, id=157, 578.16pt x 433.62pt>
+ [6 <./libsvm-3.20/tools/deg3.pdf>]
+<libsvm-3.20/tools/deg5.pdf, id=182, 578.16pt x 433.62pt>
 File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg5.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf used on input line 58.
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf used on input line 119.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
  <use libsvm-3.20/tools/deg5.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf used on input line 58.
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf used on input line 119.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 
-<libsvm-3.20/tools/deg5.pdf, id=160, page=1, 578.16pt x 433.62pt>
+<libsvm-3.20/tools/deg5.pdf, id=185, page=1, 578.16pt x 433.62pt>
 File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg5.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
-8.
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 1
+19.
 (pdftex.def)             Requested size: 578.15858pt x 433.61894pt.
 File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg5.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
-8.
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 1
+19.
 (pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
 File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg5.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
-8.
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 1
+19.
 (pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
 File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg5.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
-8.
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 1
+19.
 (pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
 File: libsvm-3.20/tools/deg5.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/deg5.pdf, page 1>
-Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 5
-8.
+Package pdftex.def Info: libsvm-3.20/tools/deg5.pdf, page1 used on input line 1
+19.
 (pdftex.def)             Requested size: 614.4611pt x 460.84583pt.
- [5 <./libsvm-3.20/tools/deg5.pdf>]
-Overfull \hbox (6.8578pt too wide) in paragraph at lines 72--73
+ [7 <./libsvm-3.20/tools/deg5.pdf>]
+Overfull \hbox (6.8578pt too wide) in paragraph at lines 133--134
 []\T1/lmr/m/n/10 Similarly nSV and nBSV rep-re-sent the num-ber of sup-port vec
 -tors and bounded
  []
 
 
-Overfull \hbox (0.55559pt too wide) in paragraph at lines 74--75
+Overfull \hbox (0.55559pt too wide) in paragraph at lines 135--136
 []\T1/lmr/m/n/10 After man-u-ally pop-u-lat-ing d, cross-train ac-cu-racy, test
  ac-cu-racy, nSV, nBSV,
  []
 
-<libsvm-3.20/tools/ques4_1.pdf, id=214, 794.97pt x 1084.05pt>
+<libsvm-3.20/tools/ques4_1.pdf, id=240, 794.97pt x 1084.05pt>
 File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/ques4_1.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf used on input line 86.
+Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf used on input line 147.
 (pdftex.def)             Requested size: 794.96806pt x 1084.04736pt.
 File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
  <use libsvm-3.20/tools/ques4_1.pdf>
-Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf used on input line 86.
+Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf used on input line 147.
 (pdftex.def)             Requested size: 794.96806pt x 1084.04736pt.
 
-[6] <libsvm-3.20/tools/ques4_1.pdf, id=229, page=1, 794.97pt x 1084.05pt>
+[8] <libsvm-3.20/tools/ques4_1.pdf, id=251, page=1, 794.97pt x 1084.05pt>
 File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/ques4_1.pdf, page 1>
 Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf, page1 used on input lin
-e 86.
+e 147.
 (pdftex.def)             Requested size: 794.96806pt x 1084.04736pt.
 File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/ques4_1.pdf, page 1>
 Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf, page1 used on input lin
-e 86.
+e 147.
 (pdftex.def)             Requested size: 582.99194pt x 794.98901pt.
 File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/ques4_1.pdf, page 1>
 Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf, page1 used on input lin
-e 86.
+e 147.
 (pdftex.def)             Requested size: 582.99194pt x 794.98901pt.
 File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/ques4_1.pdf, page 1>
 Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf, page1 used on input lin
-e 86.
+e 147.
 (pdftex.def)             Requested size: 582.99194pt x 794.98901pt.
 File: libsvm-3.20/tools/ques4_1.pdf Graphic file (type pdf)
 
 <use libsvm-3.20/tools/ques4_1.pdf, page 1>
 Package pdftex.def Info: libsvm-3.20/tools/ques4_1.pdf, page1 used on input lin
-e 86.
+e 147.
 (pdftex.def)             Requested size: 582.99194pt x 794.98901pt.
- [7 <./libsvm-3.20/tools/ques4_1.pdf>]
-Overfull \hbox (15.00366pt too wide) in paragraph at lines 97--98
+ [9 <./libsvm-3.20/tools/ques4_1.pdf>]
+Overfull \hbox (15.00366pt too wide) in paragraph at lines 158--159
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[8] [9]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 180.
-
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
- [10]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
-
-(./FML-FA15-HW2-ajr619.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
+[10] [11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
+ [12]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
+ (./FML-FA15-HW2-ajr619.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
 Package rerunfilecheck Info: File `FML-FA15-HW2-ajr619.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 250.
  ) 
 Here is how much of TeX's memory you used:
- 8948 strings out of 493304
- 127566 string characters out of 6139870
- 247332 words of memory out of 5000000
+ 8957 strings out of 493304
+ 127663 string characters out of 6139870
+ 246760 words of memory out of 5000000
  12208 multiletter control sequences out of 15000+600000
  53032 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 39i,20n,51p,446b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,20n,51p,446b,1003s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
@@ -725,10 +734,10 @@ lmro10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmsy5.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy7.
 pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on FML-FA15-HW2-ajr619.pdf (10 pages, 307054 bytes).
+Output written on FML-FA15-HW2-ajr619.pdf (12 pages, 323355 bytes).
 PDF statistics:
- 429 PDF objects out of 1000 (max. 8388607)
- 222 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 448 PDF objects out of 1000 (max. 8388607)
+ 239 compressed objects within 3 object streams
+ 68 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
