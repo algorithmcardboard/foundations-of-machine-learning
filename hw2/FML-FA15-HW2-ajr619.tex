@@ -119,12 +119,21 @@ The value of soft margin (rho) for the rbf kernel SVM is -0.586184.
     \phi(y_{i}) = \begin{bmatrix} \cos (y_{i}^{2}) \\ \sin (y_{i}^{2}) \end{bmatrix}
     \end{align}
 
-    We know that if K can be written as \( \langle \phi(x_{i}), \phi(y_{i}) \rangle \), then it is a PDS@.
+    K can be written as summation of N kernels that are a product of n \( K^{'} \) kernels.  \( K' = \cos (x_{i}^{2} - y_{i}^{2} ) \).  Hence to prove that K is PDS, it is enough to show that \( K^{'} \) is PDS. 
 
-    Also, \( \langle \phi(x_{i}), \phi(y_{i}) \rangle \) is a scalar.  When a scalar is raised to a positive power (n in our case) and summed with N other positive scalar, we get a positive scalar as our answer.  Hence
-    \begin{equation*}
-      K(x,y) = \sum_{i=1}^{N} \cos^{n} (x_{i}^{2} - y_{i}^{2} ) \mathrm{is PDS.}
-    \end{equation*}
+    To show \( K^{'}\) is PDS, we show that \( c^{T}K'c \)  > 0 for any column vector \( C = (C_{1}, C_{2}, ...  ,C_{m})^{T} \in \mathbb{R}^{m} ) \)
+
+    \begin{align}
+    C^{T}K^{'}C  =& \sum_{i,j = 1}^{m} c_{i}c_{j} \begin{bmatrix} \cos (x_{i}^{2}) \\ \sin (x_{i}^{2}) \end{bmatrix} \begin{bmatrix} \cos (y_{i}^{2}) \\ \sin (y_{i}^{2}) \end{bmatrix} \\
+      =& \sum_{i=1}^{n}c_{i} \begin{bmatrix} \cos (x_{i}^{2}) \\ \sin (x_{i}^{2}) \end{bmatrix} \times \sum_{j=1}^{n}c_{j} \begin{bmatrix} \cos (y_{j}^{2}) \\ \sin (y_{j}^{2}) \end{bmatrix}\\
+    =& \begin{bmatrix} \sum_{i=1}^{n} c_{i} \begin{bmatrix} \cos (x_{i}^{2}) \\ \sin (x_{i}^{2})  \end{bmatrix} \end{bmatrix}^{2} \\
+    \ge& 0
+    \end{align}
+
+    Which proves \( K^{'} \) is PDS. 
+
+
+    Hence \( K(x,y) = \sum_{i=1}^{N} \cos^{n} (x_{i}^{2} - y_{i}^{2} ) \) is PDS.
 \end{description}
 
 \begin{thebibliography}{1}
