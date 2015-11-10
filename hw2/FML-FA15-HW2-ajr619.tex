@@ -80,7 +80,7 @@ After manually populating d, cross-train accuracy, test accuracy, nSV, nBSV, rho
   5 & 2132.4 & 1937.4 & 195.0 & 2368 & 2150 & 218 \\
 \end{tabular}
 
-Soft margin is given by the rho value.  Svm-train outputs negative margin values (rho). We use \(-1 * \mathrm{rho} \) values to plot the soft margins in our plots.
+Soft margin is given by the rho value.  Svm-train outputs negative margin values (rho). We use rho values to plot the soft margins in our plots.
 The plots generated are as shown below.
 
 \includepdf[pages={1},lastpage={1}]{libsvm-3.20/tools/ques4_1.pdf}
@@ -101,7 +101,7 @@ gives us Accuracy = 80.125\% (641/800) (classification)
 
 The best accuracy we got with polynomial kernel SVM is 76.125 for \( C^{*} = 5^{1.0} \) with degree \( d^{*} = 3 \).
 
-The value of soft margin (rho) for the rbf kernel SVM is 0.586184.
+The value of soft margin (rho) for the rbf kernel SVM is -0.586184.
 
 \subsection*{6}
 

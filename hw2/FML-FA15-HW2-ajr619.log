@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.31)  9 NOV 2015 13:34
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.10.31)  9 NOV 2015 16:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -702,10 +702,10 @@ Package rerunfilecheck Info: File `FML-FA15-HW2-ajr619.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 139.
  ) 
 Here is how much of TeX's memory you used:
- 8937 strings out of 493304
- 127435 string characters out of 6139870
+ 8936 strings out of 493304
+ 127425 string characters out of 6139870
  247299 words of memory out of 5000000
- 12207 multiletter control sequences out of 15000+600000
+ 12206 multiletter control sequences out of 15000+600000
  53032 words of font info for 55 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  39i,18n,51p,446b,1054s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -721,9 +721,9 @@ public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmro10.pfb></usr/sha
 re/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/
 lm/lmsy7.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on FML-FA15-HW2-ajr619.pdf (9 pages, 269418 bytes).
+Output written on FML-FA15-HW2-ajr619.pdf (9 pages, 269730 bytes).
 PDF statistics:
- 400 PDF objects out of 1000 (max. 8388607)
+ 401 PDF objects out of 1000 (max. 8388607)
  199 compressed objects within 2 object streams
  49 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
