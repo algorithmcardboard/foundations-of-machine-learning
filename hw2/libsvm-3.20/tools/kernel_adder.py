@@ -21,12 +21,12 @@ gamma = 1.0/X.shape[1]
 pairwise_dists = squareform(pdist(X, 'euclidean'))
 
 GAUSSIAN = scip.exp(pairwise_dists ** 2 / negSigmaSq)
-GAUSSIAN = np.insert(GAUSSIAN, 0, np.arange(1, X.shape[0]+1), axis=1)
+#GAUSSIAN = np.insert(GAUSSIAN, 0, np.arange(1, X.shape[0]+1), axis=1)
 
 POLY = np.dot(X, X.T)
 POLY = np.multiply(POLY, gamma)
 POLY = np.power(POLY, DEGREE)
-POLY = np.insert(POLY, 0, np.arange(1, X.shape[0]+1), axis=1)
+#POLY = np.insert(POLY, 0, np.arange(1, X.shape[0]+1), axis=1)
 
 print "shape of poly is {0}".format(POLY.shape)
 
