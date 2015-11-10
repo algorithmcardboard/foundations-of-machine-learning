@@ -139,7 +139,41 @@ The value of soft margin (rho) for the rbf kernel SVM is -0.586184.
 \subsection*{1}
 \begin{description}
   \item{Given:} \( K(x,y) = e^{-\frac{ \left\lVert x - y \right\rVert }{\sigma}} \) \\
-    and \( \left\lVert x - y \right\rVert  = \frac{1}{2\Gamma(\frac{1}{2})} \)
+    and \( \left\lVert x - y \right\rVert  = \frac{1}{2\Gamma{\frac{1}{2}}} \int_{0}^{\infty} \frac{1 - e^{-t(\left\lVert x - y \right\rVert^{2})} }{ t^{3/2}} dt \) valid for all x,y
+  \item{To prove:} K is PDS
+  \item{Proof:}
+    A normalized kernel $K^{'}$ for any kernel K is given by
+    \begin{equation*}
+      K^{'} = \frac{K(x,y)}{\sqrt{K(x,x) K(y,y)}}
+    \end{equation*}
+
+    For a PDS kernel given by K1 = $e^{2txy} \forall t \ge 0$ we have the normalized kernel $K_{1}$as 
+    \begin{align}
+      =& \frac{e^{2txy}}{\sqrt{e^{2tx.x}e^{2ty.y}}} \\
+      =& \frac{e^{2txy}}{e^{t(x.x + y.y)}} \\
+      =& e^{-t(\left\lVert x - y \right\rVert^{2})}
+    \end{align}
+
+    Since K1 is PDS, its normalized kernel $K_{1} $ is also a PDS kernel.
+
+    => $-e^{-t(\left\lVert x - y \right\rVert^{2})}$ is NDS and also 1 $-e^{-t(\left\lVert x - y \right\rVert^{2})}$ is also NDS.  Since $ t \ge 0$, we can say that $ K_{nds} = \frac{1 - e^{-t(\left\lVert x - y \right\rVert^{2})}}{t^{3/2}}$ is also a NDS kernel.
+
+    Now, for the kernel $K_{2} = \frac{1}{2\Gamma{\frac{1}{2}}} \int_{0}^{\infty} \frac{1 - e^{-t(\left\lVert x - y \right\rVert^{2})} }{ t^{3/2}} dt$
+    for any column vector \( C = (C_{1}, C_{2}, ...  ,C_{m})^{T} \in \mathbb{R}^{m} ) \)
+    \begin{align*}
+      C^{T}K_{2}C =& \sum_{i,j=1}^{n} c_{i}c_{j} K_{2}(x_{i}x_{j}) \\
+      =& \sum_{i,j=1}^{n} c_{i}c_{j} \bigl[ \frac{1}{2\Gamma{\frac{1}{2}}} \int_{0}^{\infty} \frac{1 - e^{-t(\left\lVert x - y \right\rVert^{2})} }{ t^{3/2}} dt \bigr] \\
+      =& \frac{1}{2\Gamma{\frac{1}{2}}} \bigl[ \int_{0}^{\infty} \sum_{i,j=1}^{n} c_{i}c_{j} \frac{1 - e^{-t(\left\lVert x - y \right\rVert^{2})} }{ t^{3/2}} dt \bigr] 
+    \end{align*}
+    Since we know that $K_{nds} \le 0$; 
+    \begin{align*}
+      C^{T}K_{2}C \le& 0 \\
+    \end{align*}
+    => $K_{2}$ is also NDS.
+
+    This proves that \( \left\lVert x - y \right\rVert \) is an NDS kernel.  Since \( \left\lVert x - y \right\rVert \) is NDS, from lecture5 which states that K is NDS iff exp(-tK) is PDS for all t > 0: 
+
+    => $e^{-t\left\lVert x - y \right\rVert} $  is a PDS kernel where $t = \frac{1}{\sigma} $
 \end{description}
 
 \begin{thebibliography}{1}
@@ -149,6 +183,7 @@ The value of soft margin (rho) for the rbf kernel SVM is -0.586184.
   \bibitem{plotterpy} \url{http://git.io/v80yk}
   \bibitem{ques4file} \url{http://git.io/v8Edr}
   \bibitem{ques4py} \url{http://git.io/v8EdH}
+  \bibitem{kerneladder} \url{http://git.io/v8KT1}
 \end{thebibliography}
 
 \end{document}
