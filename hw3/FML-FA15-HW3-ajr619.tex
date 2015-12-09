@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{fancyhdr}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\pagestyle{fancy}
+\lhead{Anirudhan J Rajagopalan --- ajr619 --- N18824115}
+
+\begin{document}
+
+\title{Foundations of Machine Learning --- Homework Assignment 1}
+\date{October 11, 2015}
+\author{Anirudhan J Rajagopalan\\ N18824115\\ ajr619}
+
+\maketitle
+
+\newpage
+
+\section*{C. Randomized Halving}
+\subsection*{1.  Psuedo code}
+
+\begin{algorithm}
+  \caption{Randomized Halving}\label{euclid}
+  \begin{algorithmic}[1]
+    \State{} $ H_{1} \gets H$
+    \For{t $ \gets{} $ 1 to T} 
+    \State{} $RECEIVE(x_{t})$
+    \State{} $\hat{y_{t}} \gets MAJORITYVOTE (H_{t}, x_{t}) $
+    \State{} $RECEIVE(y_{t})$
+    \If{\( \hat{y_{t}} \neq y_{t} \)} 
+    \State{} \( H_{t+1}  \gets{} \{ C \in H_{t}: C(x_{t}) = y_{t} \}\)
+    \EndIf{}
+    \EndFor{}
+    \Return{} $H_{T+1} $
+  \end{algorithmic}
+\end{algorithm}
+
+\end{document}
