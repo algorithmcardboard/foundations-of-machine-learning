@@ -20,7 +20,7 @@
 \newpage
 
 \section*{C. Randomized Halving}
-\subsection*{1.  Psuedo code}
+\subsection*{1. Psuedo code}
 
 \begin{algorithm}
   \caption{Randomized Halving}\label{euclid}
@@ -28,7 +28,12 @@
     \State{} $ H_{1} \gets H$
     \For{t $ \gets{} $ 1 to T} 
     \State{} $RECEIVE(x_{t})$
-    \State{} $\hat{y_{t}} \gets MAJORITYVOTE (H_{t}, x_{t}) $
+    \State{} \( r_{t} \gets{} \frac{\sum_{i:y_{t,i} = 1} 1}{\mid H_{t} \mid}  \)
+    \State{} \( p_{t} \gets{} 1 \)
+    \If{\( r_{t} \le \frac{3}{4} \)} 
+    \State{} \( p_{t} \gets{} [\frac{1}{2} \log_2{\frac{1}{1- r_{t}}} ] \)
+    \EndIf{}
+    \State{} \( \hat{y_{t}} \gets{} GetRandomNumberWithProbability([1, 0], [p_{t}, 1-p_{t}]) \)
     \State{} $RECEIVE(y_{t})$
     \If{\( \hat{y_{t}} \neq y_{t} \)} 
     \State{} \( H_{t+1}  \gets{} \{ C \in H_{t}: C(x_{t}) = y_{t} \}\)
@@ -37,5 +42,29 @@
     \Return{} $H_{T+1} $
   \end{algorithmic}
 \end{algorithm}
+
+\subsection*{2. Prove \( \forall t \geq 1, E[\mu] \le \frac{\phi_{t} - \phi_{t+1}}{2} \)}
+\begin{description}
+  \item{Given:} Potential function: \( \phi_{t} = \log_2{\mid H_{t} \mid} \) and \( \mu_{t} = 1_{y_{t} \neq \hat{y_{t}} } \)
+  \item{Proof:} \\
+    We are only considering the case when the predicted value \( \hat{y_{t}} \) is not equal to the received value \( y_{t} \).
+    The value of expectation can be written as 
+    \begin{align*}
+      E[\mu_{t}] =& p_{t}*1 + (1 - p_{t})*0 \\
+      =& p_{t}*1
+    \end{align*}
+
+    The probability of predicting 1 by the randomized algorithm is the probability of making a mistake since we are only considering the cases in which we make mistakes \(  ( \mu_{t} = 1_{y_{t} \neq \hat{y_{t}}})\)
+
+    Therefore, 
+    \begin{align*}
+      E[\mu_{t}] =& p_{t}\\
+    \end{align*}
+
+\end{description}
+
+\subsection*{3. Expected number of mistakes.}
+
+\subsection*{4. [Bonus Question]}
 
 \end{document}
