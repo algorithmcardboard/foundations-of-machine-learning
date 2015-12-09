@@ -76,11 +76,26 @@
       = & [ \frac{\phi_{t} - \phi_{t+1}}{2}] \\
       \therefore E[\mu_{t}] \le &  \frac{\phi_{t} - \phi_{t+1}}{2}
     \end{align*}
-
-
 \end{description}
 
 \subsection*{3. Expected number of mistakes.}
+\begin{description}
+  \item{Given:} N be the total number of experts at the beginnning of the iterations (denoted by \( H_{1} \)). Since we are considering a relizable scenario at the end of the algorithm the number of experts should be atleast one.  So \( H_{T} = 1 \). 
+  \item{To Prove:} The expected number of mistakes made by Randomized Halving is at most \( \frac{1}{2}\log_2{N} \)
+  \item{Proof:} \\
+    Lets consider the total expectation of mistakes of the Randomized Halving algorithm over T iterations.
+    \begin{align*}
+      E[\mu_{T}] \le & \sum_{t=1}^{T} \frac{\phi_{t} - \phi_{t+1}}{2} \\
+      \le & \frac{(\phi_{H_{1}} - \phi_{H_{2}}) + (\phi_{H_{2}} - \phi_{H_{3}})  \cdots (\phi_{H_{T-2}} - \phi_{H_{T-1}}) + (\phi_{H_{T-1}} - \phi_{H_{T}}) \ }{2} \\
+      \le & \frac{\phi_{H_{1}} - \phi_{H_{T}}}{2} \\
+      \le & \frac{\phi_{N} - \phi_{T}}{2} \\
+      \le & \frac{\phi_{N}}{2} \\
+      \le & \frac{1}{2}\log_2{N}
+    \end{align*}
+    Hence proved.
+
+    Here \( \phi_{T} = 0 \) because the number of experts at line T is 1.  Therefore, \( \log \) of T will be zero.
+\end{description}
 
 \subsection*{4. [Bonus Question]}
 
