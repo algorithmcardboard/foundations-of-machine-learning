@@ -59,7 +59,24 @@
     Therefore, 
     \begin{align*}
       E[\mu_{t}] =& p_{t}\\
+      =& [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}} ] 1_{r_{t} \le \frac{3}{4}} + 1_{r_{t} > \frac{3}{4}} \\
+      \le & [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}}]
     \end{align*}
+    Since, the Expectation will be 1 when \( r_{t} > \frac{3}{4} \) which corresponds to the maximum expectation here, we can upper bound the expectation by using \( r_{t} \le \frac{3}{4} \) as \( [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}} ] \) equals 1 when \( r_{t} = \frac{3}{4} \)
+
+    \begin{align*}
+      E[\mu_{t}] \le & [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}}] \\
+      = & [ \frac{\log_2{\frac{1}{1 - r_{t}}}}{2}] \\
+      = & [ \frac{\log_2{\frac{1}{1 - r_{t}}}}{2}] \\
+      = & [ \frac{\log_2{\frac{1}{1 - \frac{\mid H_{1} \mid}{\mid H_{t} \mid}}}}{2}] \\
+      = & [ \frac{\log_2{\frac{\mid H_{t} \mid}{\mid H_{t} \mid - \mid H_{1} \mid}}}{2}] \\
+      = & [ \frac{\log_2{\frac{\mid H_{t} \mid}{\mid H_{0} \mid}}}{2}] \\
+      = & [ \frac{\log_2{\mid H_{t} \mid} - \log_2{\mid H_{0} \mid}}{2}] \\
+      = & [ \frac{\log_2{\mid H_{t} \mid} - \log_2{\mid H_{t+1} \mid}}{2}] \\
+      = & [ \frac{\phi_{t} - \phi_{t+1}}{2}] \\
+      \therefore E[\mu_{t}] \le &  \frac{\phi_{t} - \phi_{t+1}}{2}
+    \end{align*}
+
 
 \end{description}
 
