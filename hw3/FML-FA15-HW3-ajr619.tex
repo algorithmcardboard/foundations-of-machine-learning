@@ -143,6 +143,90 @@
 
 \end{description}
 
+\subsection*{2. Derive boosting type algorithm}
+We can build an algorithm similar to adaboost using coordinate descent.  The algorithm and the explanation are given below.
+\begin{algorithm}
+  \caption{Boosting type algorithm}
+  \begin{algorithmic}[1]
+    \State{} \( S = ( (x_{1}, y_{1}), (x_{2}, y_{2}), \ldots, (x_{m}, y_{m})) \)
+    \For{i $\gets$ 1 to m }
+    \State{} $ D_{1}(i) \gets{}  \frac{1}{m}$
+    \EndFor{}
+    \For{i $\gets$ 1 to T }
+    \State{} $h_{t} \gets{} $ base classifier in H with small error $ \epsilon_{t} = \Pr_{D_{t}}[h_{t}(x_{i}) \neq y_{i}] $
+    \State{} $\alpha_{t} \gets{} \eta$ obtained by searching non-linear equation of $ \eta $
+    \State{} $f_{t} \gets f_{t-1} + \alpha_{t}h_{t} $
+    \EndFor{}
+    \For{i $\gets$ 1 to m }
+    \State{} $ D_{t}(i) \gets{}  \frac{1}{m} \frac{\phi^{'}_{p}(-y_{i}f_{t}(x_{i})) }{\sum_{i=1}^{m} \phi^{'}_{p}(-y_{i}f_{t}(x_{i}))}$
+    \EndFor{}
+    \Return{} \( h = sgn(f_{T}) \)
+  \end{algorithmic}
+\end{algorithm}
+
+The objective function is defined as 
+\begin{equation*}
+  F(\alpha) = \sum_{i = 1}^{m} \phi_{p} (-y_{i}f_{T}(x_{i}))
+\end{equation*}
+
+Where
+\begin{equation*}
+  F_{T}(x_{i}) = \sum_{t=1}^{T} \alpha_{t}h_{t}(x_{i})
+\end{equation*}
+and the weighted distribution of the sample is 
+\begin{equation*}
+  D_{t}(i) \gets{}  \frac{1}{m} \frac{\phi^{'}_{p}(-y_{i}f_{t}(x_{i})) }{\sum_{i=1}^{m} \phi^{'}_{p}(-y_{i}f_{t}(x_{i}))}
+\end{equation*}
+
+The weighted distribution is initialized to \( \frac{1}{m} \) initially.
+
+
+Let $ e_{t} $ denote the unit vector corresponding to the coordinate in $ \mathbb{R}^{n} $ and let $\alpha_{t - 1}$ denote the vector based on the (t-1) coefficients.
+
+\begin{equation*}
+  \alpha_{t-1} = 
+  \begin{cases}
+    {(\alpha_{1}, \alpha_{2}, \ldots, \alpha_{t-1}, 0, 0, \ldots, 0)}^{T} & \mathrm{if (t-1) > 0}\\
+    0 & otherwise
+  \end{cases}
+\end{equation*}
+
+\subsubsection*{Direction}
+Coordinate descent selects the direction $e_{t}$ that minimizes the directional derivative.
+\begin{equation*}
+  e_{t} = argmin_{t}{[\frac{dF(\alpha_{t-1} + \eta e_{t} )}{d\eta}]}_{\eta = 0}
+\end{equation*}
+where 
+\begin{align*}
+  F(\alpha_{t-1} + \eta e_{t} ) = & \sum_{i=1}^{m} \phi_{p} \left( -y_{i}\sum_{j=1}^{t-1} (\alpha_{j} + \eta e_{t})h_{j} \right) \\
+  = & \sum_{i=1}^{m} \phi_{p} \left( -y_{i}\sum_{j=1}^{t-1} \alpha_{j}h_{j}(x_{i}) - \eta y_{i}h_{t}(x_{i}) \right)\\
+\end{align*}
+
+Also,
+\begin{align*}
+  \frac{dF(\alpha_{t-1} + \eta e_{t} )}{d\eta} = & -\sum_{i=1}^{m} y_{i}h_{t}(x_{i}).\phi^{'}_{p} \left( -y_{i}\sum_{j=1}^{t-1} \alpha_{j}h_{j}(x_{i}) \right) \\
+  = & \sum_{i=1}^{m} y_{i}h_{t}(x_{i}).D(i).\left(m\sum_{k=1}^{m} \phi^{'}_{p}(-y_{k}f_{t}(x_{k})) \right) \\
+  = & -\left(\sum_{y_{i}h_{t} = -1}D(i) + \sum_{y_{i}h_{t} = 1} D(i) \right) \left(m \sum_{k=1}^{m} \phi^{'}_{p}(-y_{k}f_{t}(x_{k}))\right) \\
+  = & -\left( (1 - \epsilon_{t} - \epsilon_{t}) \right) \left( m\sum_{i = 1}^{m}\phi^{'}_{p} (-y_{i}f_{t}(x_{i})) \right) \\
+  = & (2\epsilon_{t} - 1)\left( m\sum_{i = 1}^{m}\phi^{'}_{p} (-y_{i}f_{t}(x_{i})) \right) \\
+  \varpropto & (2\epsilon_{t} - 1)
+\end{align*}
+
+Because of the above equation, it can be seen that the hypothesis chosen by the algorithm minimizes the mis-classification error.
+
+\subsubsection*{Step}
+We can obtain the step by minimizing the derivative of dF for $\eta$
+\begin{align*}
+  1 =& 2
+\end{align*}
+\subsubsection*{Generalization Bound}
+A family of functions (H) taking values in {+1, -1} with VC-dimension d for any $ \delta > 0 $ with probability atleast $ 1 - \delta $, it holds for any $h \in conv(H)$:
+\begin{align*}
+  R(h) \le & \hat{R_{p}(h)} + \frac{2}{p} \sqrt{\frac{2d\log{\frac{em}{d}}}{m}} + \sqrt{\frac{\log{\frac{1}{\delta}}}{2m}}
+\end{align*}
+
+The above expression is true for all ensemble methods (Refer Corollary 6.2, page 133 of Foundations of Machine Learning, Mehryar Mohri et al.) it will be true for the algorithm described above.  Also we cannot have an emperical bound on $\hat{R}_p(h)$ in terms of misclassification error as there is not closed form expression of $\alpha_{t}$
+
 \newpage
 
 \section*{C. Randomized Halving}
