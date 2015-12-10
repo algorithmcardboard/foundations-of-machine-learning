@@ -204,7 +204,8 @@ where
 
 Also,
 \begin{align*}
-  \frac{dF(\alpha_{t-1} + \eta e_{t} )}{d\eta} = & -\sum_{i=1}^{m} y_{i}h_{t}(x_{i}).\phi^{'}_{p} \left( -y_{i}\sum_{j=1}^{t-1} \alpha_{j}h_{j}(x_{i}) \right) \\
+  \frac{dF(\alpha_{t-1} + \eta e_{t} )}{d\eta} = & -\sum_{i=1}^{m} y_{i}h_{t}(x_{i}).\phi^{'}_{p} \left( -y_{i}\sum_{j=1}^{t-1} \alpha_{j}h_{j}(x_{i}) - \eta y_{i}h_{t}(x_{i}) \right) \\
+  {\left[\frac{dF(\alpha_{t-1} + \eta e_{t} )}{d\eta}\right]}_{\eta = 0} = & -\sum_{i=1}^{m} y_{i}h_{t}(x_{i}).\phi^{'}_{p} \left( -y_{i}\sum_{j=1}^{t-1} \alpha_{j}h_{j}(x_{i})\right) \\
   = & \sum_{i=1}^{m} y_{i}h_{t}(x_{i}).D(i).\left(m\sum_{k=1}^{m} \phi^{'}_{p}(-y_{k}f_{t}(x_{k})) \right) \\
   = & -\left(\sum_{y_{i}h_{t} = -1}D(i) + \sum_{y_{i}h_{t} = 1} D(i) \right) \left(m \sum_{k=1}^{m} \phi^{'}_{p}(-y_{k}f_{t}(x_{k}))\right) \\
   = & -\left( (1 - \epsilon_{t} - \epsilon_{t}) \right) \left( m\sum_{i = 1}^{m}\phi^{'}_{p} (-y_{i}f_{t}(x_{i})) \right) \\
@@ -215,10 +216,36 @@ Also,
 Because of the above equation, it can be seen that the hypothesis chosen by the algorithm minimizes the mis-classification error.
 
 \subsubsection*{Step}
-We can obtain the step by minimizing the derivative of dF for $\eta$
+We can obtain the step by minimizing the derivative of dF with respect to $\eta$ to find the direction along $e_{t}$
 \begin{align*}
-  1 =& 2
+  -\sum_{i=1}^{m} y_{i}h_{t}(x_{i}).\phi^{'}_{p} \left( -y_{i}\sum_{j=1}^{t-1} \alpha_{j}h_{j}(x_{i}) - \eta y_{i}h_{t}(x_{i}) \right) = & 0 \\
 \end{align*}
+
+Since $\phi^{'}_{p}$ is defined as 
+\begin{align*}
+  =& \begin{cases}
+  p{(1+u)}^{p-1} & \mathrm{if } {(1+u)}^{p} \ge 0 \\
+  0 & otherwise
+     \end{cases}
+\end{align*}
+
+Let us define a set \( I =  \left\{ i \in [1,m] : \phi^{'}_{p}\left( -y_{i}\sum_{j=1}^{t-1} \alpha_{j}h_{j}(x_{i}) - \eta y_{i}h_{t}(x_{i}) \right) \ne 0\right\} \)
+
+Since we  only have to consider the values of i in which the derivative is non zero.  Now, by replacing $\phi^{'}_{p}(-u)$ with $p{(1-u)}^{p-1} $ we have
+\begin{align*}
+  -p\sum_{i \in I}y_{i}h_{t}(x_{i})D(i)\left(m\sum_{k=1}^{m}\phi^{'}_{p}(y_{k}f_{t-1}(x_{k}) - \eta y_{k}h_{t}(x_{k}) )\right) = & 0 \\
+  -\sum_{i \in I} y_{i}h_{t}(x_{i}) D(i) \left( mp\sum_{k\in I}{\left( 1 - y_{i}\sum_{j=1}^{t-1} \alpha_{j}h_{j}(x_{i}) - \eta y_{i}h+{t}(x_{i}) \right)}^{p-1} \right) = & 0 \\
+  \sum_{y_{i}h_{t} = +1} (1 - \epsilon_{t})\sum_{k \in I} {\left( 1 - y_{i}\sum_{j=1}^{t-1} \alpha_{j}h_{j}(x_{i}) - \eta \right)}^{p-1} - \epsilon_{t} \sum_{k \in I}  {\left( 1 - y_{i}\sum_{j=1}^{t-1} \alpha_{j}h_{j}(x_{i}) - \eta \right)}^{p-1} = & 0
+\end{align*}
+by removing the constants and negative signs.  This gives us a (p-1) monic polynomial in $\eta$: 
+\begin{align*}
+  \eta^{p-1} + a_{p-2}(\epsilon_{t})\eta^{p-2} + \cdots + a_{1}(\epsilon_{t})\eta + a_{0}(\epsilon_{t}) = 0
+\end{align*}
+
+This can be solved using Newtons' method to find the value of step size $\eta$
+
+
+
 \subsubsection*{Generalization Bound}
 A family of functions (H) taking values in {+1, -1} with VC-dimension d for any $ \delta > 0 $ with probability atleast $ 1 - \delta $, it holds for any $h \in conv(H)$:
 \begin{align*}
