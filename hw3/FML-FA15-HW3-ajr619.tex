@@ -19,6 +19,46 @@
 
 \newpage
 
+\section*{A. Boosting-type Algorithm}
+\subsection*{1. Proof of convexity and differentiability}
+\begin{description}
+  \item{Given: } \( \phi_{p}(u) = \max( {(1 + u)}^{p}, 0) \)
+  \item{To prove:} 1. Function \( \phi_{p}(u) \) is convex and differentiable \\ And 2. \( \forall u \in \mathbb{R} \textrm{ and } p > 1,  1_{u \le 0} \le \phi_{p}(-u) \)
+  \item{Proof of \( \forall u \in \mathbb{R} \textrm{ and } p > 1,  1_{u \le 0} \le \phi_{p}(-u) \)}
+    There are three cases here:
+    
+    When \( u = 0\)
+    \begin{align*}
+        1_{u \le 0} = &1 \\
+        \phi_{p}(u) = & \max( {(1 - 0)}^{p}, 0) = 1 = 1_{u \le 0}
+    \end{align*}
+
+    When \( u < 0\)
+    \begin{align*}
+        1_{u \le 0} = &1 \\
+        \phi_{p}(u) = & \max( {(1 - u)}^{p}, 0) = 1 = 1_{u \le 0}
+    \end{align*}
+  \item{Proof of Convexity and Differentiability:}
+    The function can be written as a piecewise function based on the value of p:
+
+    When p is even (2 and more)
+    \begin{align*}
+        \phi_{p}\left(x\right) = & {(1+u)}^p
+    \end{align*}
+
+
+    When p is odd (1 and more) the 
+    \begin{align*}
+        \phi_{p}\left(x\right) = 
+        \begin{cases}
+          0, & \textrm{if } u \le -1 \\
+          {(1+u)}^p, & otherwise
+        \end{cases}
+    \end{align*}
+\end{description}
+
+\newpage
+
 \section*{C. Randomized Halving}
 \subsection*{1. Psuedo code}
 
@@ -36,7 +76,7 @@
     \State{} \( \hat{y_{t}} \gets{} GetRandomNumberWithProbability([1, 0], [p_{t}, 1-p_{t}]) \)
     \State{} $RECEIVE(y_{t})$
     \If{\( \hat{y_{t}} \neq y_{t} \)} 
-    \State{} \( H_{t+1}  \gets{} \{ C \in H_{t}: C(x_{t}) = y_{t} \}\)
+    \State{} \( H_{t+1}  \gets{} \{ c \in H_{t}: c(x_{t}) = y_{t} \}\)
     \EndIf{}
     \EndFor{}
     \Return{} $H_{T+1} $
@@ -64,15 +104,17 @@
     \end{align*}
     Since, the Expectation will be 1 when \( r_{t} > \frac{3}{4} \) which corresponds to the maximum expectation here, we can upper bound the expectation by using \( r_{t} \le \frac{3}{4} \) as \( [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}} ] \) equals 1 when \( r_{t} = \frac{3}{4} \)
 
+    Let \( E_{1}, E_{0}, E_{t} \) denote the number of experts predicting 1, 0 and the total number of experts in a round t.
+
     \begin{align*}
       E[\mu_{t}] \le & [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}}] \\
       = & [ \frac{\log_2{\frac{1}{1 - r_{t}}}}{2}] \\
       = & [ \frac{\log_2{\frac{1}{1 - r_{t}}}}{2}] \\
-      = & [ \frac{\log_2{\frac{1}{1 - \frac{\mid H_{1} \mid}{\mid H_{t} \mid}}}}{2}] \\
-      = & [ \frac{\log_2{\frac{\mid H_{t} \mid}{\mid H_{t} \mid - \mid H_{1} \mid}}}{2}] \\
-      = & [ \frac{\log_2{\frac{\mid H_{t} \mid}{\mid H_{0} \mid}}}{2}] \\
-      = & [ \frac{\log_2{\mid H_{t} \mid} - \log_2{\mid H_{0} \mid}}{2}] \\
-      = & [ \frac{\log_2{\mid H_{t} \mid} - \log_2{\mid H_{t+1} \mid}}{2}] \\
+      = & [ \frac{\log_2{\frac{1}{1 - \frac{\mid E_{1} \mid}{\mid E_{t} \mid}}}}{2}] \\
+      = & [ \frac{\log_2{\frac{\mid E_{t} \mid}{\mid E_{t} \mid - \mid E_{1} \mid}}}{2}] \\
+      = & [ \frac{\log_2{\frac{\mid E_{t} \mid}{\mid E_{0} \mid}}}{2}] \\
+      = & [ \frac{\log_2{\mid E_{t} \mid} - \log_2{\mid E_{0} \mid}}{2}] \\
+      = & [ \frac{\log_2{\mid E_{t} \mid} - \log_2{\mid E_{t+1} \mid}}{2}] \\
       = & [ \frac{\phi_{t} - \phi_{t+1}}{2}] \\
       \therefore E[\mu_{t}] \le &  \frac{\phi_{t} - \phi_{t+1}}{2}
     \end{align*}
