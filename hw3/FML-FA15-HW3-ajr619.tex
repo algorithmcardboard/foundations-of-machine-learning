@@ -59,13 +59,23 @@
   \item{Proof of Convexity and Differentiability:}
     The function can be written as a piecewise function based on the value of p:
 
-    When p is even (2 and more)
+    When p is even (2 and higher value even numbers)
     \begin{align*}
-        \phi_{p}\left(x\right) = & {(1+u)}^p
+        \phi_{p}(u) = & {(1+u)}^p \\
     \end{align*}
 
+    Since p > 1, the function is differentiable.
 
-    When p is odd (1 and more) the 
+    \begin{align*}
+        \phi^{'}_{p}(u) = & p{(1+u)}^{p - 1} \\
+        \phi^{''}_{p}(u) = & {(p - 1)}p{(1+u)}^{p - 2} \\
+        \because p > 1, \phi^{''}_{p}(u) > & 0
+    \end{align*}
+
+    Since the double derivative is greater than zero, the function is convex and differentiable.
+
+
+    When p is odd (1 and higher value odd numbers) the function can be defined using the piecewise function
     \begin{align*}
         \phi_{p}\left(x\right) = 
         \begin{cases}
@@ -73,6 +83,64 @@
           {(1+u)}^p, & otherwise
         \end{cases}
     \end{align*}
+
+    The function is piecewise continuous and differentiable. We have to check that the function is differentiable at u = -1 to show that the function is differentiable and continuous.  We should also check the double derivative to show that the function is convex.
+
+    The first derivative can be found using limits.
+
+    \begin{align*}
+      \lim_{h \to 0+} \frac{\phi_{p}(-1 + h) - \phi_{p}(-1)}{h}=&  \lim_{h \to 0+} \frac{{(1 + (-1 + h))}^{p} - {(1 -1)}^{p}}{h} \\
+      = & \lim_{h \to 0+} \frac{h^{p} - 0}{h} \\
+      = & \lim_{h \to 0+} h^{p - 1} \\
+      = & 0
+    \end{align*}
+
+    Also 
+    
+    \begin{align*}
+      \lim_{h \to 0-} \frac{\phi_{p}(-1 + h) - \phi_{p}(-1)}{h}=&  \lim_{h \to 0+} \frac{{(1 + (-1 + h))}^{p} - {(1 -1)}^{p}}{h} \\
+      = & \lim_{h \to 0-} \frac{h^{p} - 0}{h} \\
+      = & \lim_{h \to 0-} h^{p - 1} \\
+      = & 0
+    \end{align*}
+
+    Since both the limit values are equal, the function is differentiable. Therefore:
+    \begin{align*}
+        \phi^{'}_{p}\left(x\right) = 
+        \begin{cases}
+          0, & \textrm{if } u \le -1 \\
+          p{(1+u)}^{p-1}, & otherwise
+        \end{cases}
+    \end{align*}
+
+    For showing the function is convex, we find the double differeniable using limits for \( \phi^{'}_{p} \) and show that it is non negative
+
+    \begin{align*}
+      \lim_{h \to 0+} \frac{\phi^{'}_{p}(-1+h) - \phi^{'}_{p}(-1) }{h} = & \lim_{h \to 0+} \frac{p{(1 + (-1 + h))}^{p-1} - 0}{h} \\
+      = & \lim_{h \to 0+} \frac{p{(h)}^{p-1}}{h} \\
+      = & \lim_{h \to 0+} p{(h)}^{p-2} \\
+      = 0
+    \end{align*}
+
+    \begin{align*}
+      \lim_{h \to 0-} \frac{\phi^{'}_{p}(-1+h) - \phi^{'}_{p}(-1) }{h} = & \lim_{h \to 0-} \frac{p{(1 + (-1 + h))}^{p-1} - 0}{h} \\
+      = & \lim_{h \to 0-} \frac{p{(h)}^{p-1}}{h} \\
+      = & \lim_{h \to 0-} p{(h)}^{p-2} \\
+      = 0
+    \end{align*}
+
+    Since the left and right derivatives are equal, the function is \( \phi^{'}_{p} \) is differentiable.  Which implies that the original function \( \phi_{p}\) is double differentiable.
+
+    \begin{align*}
+        \phi^{''}_{p}\left(x\right) = 
+        \begin{cases}
+          0, & \textrm{if } u \le -1 \\
+          (p-1)p{(1+u)}^{p-2}, & otherwise
+        \end{cases}
+    \end{align*}
+    
+    Since in both cases the double differentiable is non negative, the function is convex and differentiable.
+
 \end{description}
 
 \newpage
