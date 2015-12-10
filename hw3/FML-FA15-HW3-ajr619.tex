@@ -47,7 +47,7 @@
 \begin{description}
   \item{Given:} Potential function: \( \phi_{t} = \log_2{\mid H_{t} \mid} \) and \( \mu_{t} = 1_{y_{t} \neq \hat{y_{t}} } \)
   \item{Proof:} \\
-    We are only considering the case when the predicted value \( \hat{y_{t}} \) is not equal to the received value \( y_{t} \).
+    We are only considering the case when the predicted value \( \hat{y_{t}} \) is not equal to the received value \( y_{t} \).  Assume that our prediction is 1 but the actual result is zero.  So the probability of predicting 1 is the probability of mistake.  In this case:
     The value of expectation can be written as 
     \begin{align*}
       E[\mu_{t}] =& p_{t}*1 + (1 - p_{t})*0 \\
@@ -78,6 +78,8 @@
       = & [ \frac{\phi_{t} - \phi_{t+1}}{2}] \\
       \therefore E[\mu_{t}] \le &  \frac{\phi_{t} - \phi_{t+1}}{2}
     \end{align*}
+    Similarly we can show that when our algorithm predicts zero and when the actual label is 1 we can show that  $ E[\mu_{t}] \le \frac{\phi_{t} - \phi_{t+1}}{2} $
+
 \end{description}
 
 \subsection*{3. Expected number of mistakes.}
@@ -362,17 +364,17 @@ The above expression is true for all ensemble methods (Refer Corollary 6.2, page
 
     Using McDiarmid's Inequality,
     \begin{align*}
-      \Pr\left[\beta-E[\beta]\geq\epsilon\right] \leq & exp\left(-\frac{2\epsilon^{2}}{\sum_{i=1}^{m}\left(2r/m^{2}\right)}\right) \\
-      = & exp\left(-\frac{2\epsilon^{2}}{\left(2r/m\right)}\right)
+      \Pr\left[\beta-E[\beta]\geq\epsilon\right] \leq & \exp\left(-\frac{2\epsilon^{2}}{\sum_{i=1}^{m}\left(2r/m^{2}\right)}\right) \\
+      = & \exp\left(-\frac{2\epsilon^{2}}{\left(2r/m\right)}\right)
     \end{align*}
 
     Using $ \delta $ as exponential term:
 
     \begin{align*}
-      \delta= & exp\left(-\frac{2\epsilon^{2}}{\left(2r/m\right)}\right)\Rightarrow\epsilon=\sqrt{\frac{2r^{2}}{m}log\left(\frac{1}{\delta}\right)}\\
-      \beta-E[\beta] \geq & \epsilon\Rightarrow\beta-E[\beta]\geq\sqrt{\frac{2r^{2}}{m}log\left(\frac{1}{\delta}\right)} \\
-      \beta-E[\beta] \leq & \sqrt{\frac{2r^{2}}{m}log\left(\frac{1}{\delta}\right)} \\
-      \beta \leq & E[\beta]+\sqrt{\frac{2r^{2}}{m}log\left(\frac{1}{\delta}\right)} \\
+      \delta= & \exp\left(-\frac{2\epsilon^{2}}{\left(2r/m\right)}\right)\Rightarrow\epsilon=\sqrt{\frac{2r^{2}}{m}\log\left(\frac{1}{\delta}\right)}\\
+      \beta-E[\beta] \geq & \epsilon\Rightarrow\beta-E[\beta]\geq\sqrt{\frac{2r^{2}}{m}\log\left(\frac{1}{\delta}\right)} \\
+      \beta-E[\beta] \leq & \sqrt{\frac{2r^{2}}{m}\log\left(\frac{1}{\delta}\right)} \\
+      \beta \leq & E[\beta]+\sqrt{\frac{2r^{2}}{m}\log\left(\frac{1}{\delta}\right)} \\
     \end{align*}
     By using Jensen's inequality:
     \begin{align*}
@@ -381,23 +383,23 @@ The above expression is true for all ensemble methods (Refer Corollary 6.2, page
     \end{align*}
     Also:
     \begin{align*}
-      \sigma^{2}[\beta] = & E\left[\beta^{2}\right]-E\left[\beta\right]^{2} \\
+      \sigma^{2}[\beta] = & E\left[\beta^{2}\right]-E{\left[\beta\right]}^{2} \\
       \therefore E[\beta] \leq & \sqrt{E\left[\beta^{2}\right]} \\ 
-      = & \sqrt{\sigma^{2}[\beta]+E\left[\beta\right]^{2}}\\
+      = & \sqrt{\sigma^{2}[\beta]+E{\left[\beta\right]}^{2}}\\
     \end{align*}
     Since,
     \begin{align*}
-      \Phi(x)\leq r\Rightarrow E\left[\left\Vert E_{x\sim D}\left[\Phi(x)\right]-E_{x\sim S}\left[\Phi(x)\right]\right\Vert \right]^{2}\leq\frac{r^{2}}{m} \\
+      \Phi(x)\leq r\Rightarrow E{\left[\left\Vert E_{x\sim D}\left[\Phi(x)\right]-E_{x\sim S}\left[\Phi(x)\right]\right\Vert \right]}^{2}\leq\frac{r^{2}}{m} \\
     \end{align*}
 
     Thus we have, 
     \begin{align*}
-      \beta \leq & E[\beta]+\sqrt{\frac{2r^{2}}{m}log\left(\frac{1}{\delta}\right)} \\
-      = & \sqrt{\sigma^{2}[\beta]+E\left[\beta\right]^{2}}+\sqrt{\frac{2r^{2}}{m}log\left(\frac{1}{\delta}\right)}\\
+      \beta \leq & E[\beta]+\sqrt{\frac{2r^{2}}{m}\log\left(\frac{1}{\delta}\right)} \\
+      = & \sqrt{\sigma^{2}[\beta]+E{\left[\beta\right]}^{2}}+\sqrt{\frac{2r^{2}}{m}\log\left(\frac{1}{\delta}\right)}\\
     \end{align*}
     Which implies:
     \begin{align*}
-      \left\Vert E_{x\sim D}\left[\Phi(x)\right]-E_{x\sim S}\left[\Phi(x)\right]\right\Vert _{2}\leq\sqrt{\frac{2r^{2}}{m}}\left(1+\sqrt{log\left(\frac{1}{\delta}\right)}\right).\\
+      \left\Vert E_{x\sim D}\left[\Phi(x)\right]-E_{x\sim S}\left[\Phi(x)\right]\right\Vert _{2}\leq\sqrt{\frac{2r^{2}}{m}}\left(1+\sqrt{\log\left(\frac{1}{\delta}\right)}\right).\\
     \end{align*}
     
 \end{description}
