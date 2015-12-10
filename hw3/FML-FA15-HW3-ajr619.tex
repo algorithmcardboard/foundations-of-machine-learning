@@ -340,6 +340,68 @@ The above expression is true for all ensemble methods (Refer Corollary 6.2, page
 
 \section*{L2 regularized Maxent}
 \subsection*{1}
+\begin{description}
+  \item{To Prove:} $\forall \delta > 0$ with probability $ 1 - \delta $ the following inequality holds
+    \begin{align*}
+      \left\Vert E_{x\sim D}\left[\Phi(x)\right]-E_{x\sim S}\left[\Phi(x)\right]\right\Vert _{2}\leq\sqrt{\frac{2r^{2}}{m}}\left(1+\sqrt{\log\left(\frac{1}{\delta}\right)}\right)
+    \end{align*}
+  \item{Proof:}
+    Let $\beta = \left\Vert E_{x\sim D}\left[\Phi(x)\right]-E_{x\sim S}\left[\Phi(x)\right]\right\Vert _{2}$.  Also let $\left|\beta-\beta^{\prime}\right|$ be the quantity in which we we modify $ \beta $ by one dimension of $x_{t}$.
+    $\beta^{\prime}=\beta\left(x_{1},x_{2},\ldots,x_{i}^{\prime},\ldots,x_{m}\right)$
+    Then,
+    \begin{align*}
+      \left|\beta-\beta^{\prime}\right| = & \left\Vert E_{x\sim D}\left[\Phi(x)\right]-E_{x\sim S}\left[\Phi(x)\right]-E_{x\sim D}^{\prime}\left[\Phi(x)\right]+E_{x\sim S}^{\prime}\left[\Phi(x)\right]\right\Vert _{2} \\
+      = & \left\Vert E_{x\sim D}\left[E_{x\sim S}[\Phi(x)]\right]-\frac{1}{m}\sum_{i=1}^{m}\Phi(x_{i})-E_{x\sim D}^{\prime}\left[E_{x\sim S}^{\prime}[\Phi(x)]\right]+\frac{1}{m}\sum_{i=1}^{m-1}\left(\Phi(x_{i})+\Phi(x_{m}^{\prime})\right)\right\Vert _{2} \\
+      = & \left\Vert \frac{\Phi(x_{m}^{\prime})-\Phi(x_{m})}{m}+E_{x\sim D}\left[E_{x\sim S}[\Phi(x)]\right]-E_{x\sim D}^{\prime}\left[E_{x\sim S}^{\prime}[\Phi(x)]\right]\right\Vert _{2} \\
+    \end{align*}
+    Since $\Phi(x_{i}) \leq r;  $
+    \begin{align*}
+      \left\Vert \left(\Phi(x_{m}^{\prime})+E_{x\sim D}[\Phi(x_{i})]\right)-\left(\Phi(x_{m})+E_{x\sim D}[\Phi^{\prime}(x_{i})]\right)\right\Vert \leq & 2r \\
+      \left|\beta-\beta^{\prime}\right|\leq & \frac{2r}{m}
+    \end{align*}
+
+    Using McDiarmid's Inequality,
+    \begin{align*}
+      \Pr\left[\beta-E[\beta]\geq\epsilon\right] \leq & exp\left(-\frac{2\epsilon^{2}}{\sum_{i=1}^{m}\left(2r/m^{2}\right)}\right) \\
+      = & exp\left(-\frac{2\epsilon^{2}}{\left(2r/m\right)}\right)
+    \end{align*}
+
+    Using $ \delta $ as exponential term:
+
+    \begin{align*}
+      \delta= & exp\left(-\frac{2\epsilon^{2}}{\left(2r/m\right)}\right)\Rightarrow\epsilon=\sqrt{\frac{2r^{2}}{m}log\left(\frac{1}{\delta}\right)}\\
+      \beta-E[\beta] \geq & \epsilon\Rightarrow\beta-E[\beta]\geq\sqrt{\frac{2r^{2}}{m}log\left(\frac{1}{\delta}\right)} \\
+      \beta-E[\beta] \leq & \sqrt{\frac{2r^{2}}{m}log\left(\frac{1}{\delta}\right)} \\
+      \beta \leq & E[\beta]+\sqrt{\frac{2r^{2}}{m}log\left(\frac{1}{\delta}\right)} \\
+    \end{align*}
+    By using Jensen's inequality:
+    \begin{align*}
+      E[\beta]= & E\left[\sqrt{\beta^{2}}\right]\\
+      \leq & \sqrt{E\left[\beta^{2}\right]} \\
+    \end{align*}
+    Also:
+    \begin{align*}
+      \sigma^{2}[\beta] = & E\left[\beta^{2}\right]-E\left[\beta\right]^{2} \\
+      \therefore E[\beta] \leq & \sqrt{E\left[\beta^{2}\right]} \\ 
+      = & \sqrt{\sigma^{2}[\beta]+E\left[\beta\right]^{2}}\\
+    \end{align*}
+    Since,
+    \begin{align*}
+      \Phi(x)\leq r\Rightarrow E\left[\left\Vert E_{x\sim D}\left[\Phi(x)\right]-E_{x\sim S}\left[\Phi(x)\right]\right\Vert \right]^{2}\leq\frac{r^{2}}{m} \\
+    \end{align*}
+
+    Thus we have, 
+    \begin{align*}
+      \beta \leq & E[\beta]+\sqrt{\frac{2r^{2}}{m}log\left(\frac{1}{\delta}\right)} \\
+      = & \sqrt{\sigma^{2}[\beta]+E\left[\beta\right]^{2}}+\sqrt{\frac{2r^{2}}{m}log\left(\frac{1}{\delta}\right)}\\
+    \end{align*}
+    Which implies:
+    \begin{align*}
+      \left\Vert E_{x\sim D}\left[\Phi(x)\right]-E_{x\sim S}\left[\Phi(x)\right]\right\Vert _{2}\leq\sqrt{\frac{2r^{2}}{m}}\left(1+\sqrt{log\left(\frac{1}{\delta}\right)}\right).\\
+    \end{align*}
+    
+\end{description}
+
 \subsection*{2}
 \begin{description}
   \item{To Prove:} $\left\Vert \hat{w}-w_{D}\right\Vert _{2}\leq\frac{1}{\lambda}\left\Vert E_{x\sim S}\left[\Phi\left(x\right)\right]-E_{x\sim D}\left[\Phi\left(x\right)\right]\right\Vert _{2}$
