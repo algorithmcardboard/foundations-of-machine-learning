@@ -19,6 +19,89 @@
 
 \newpage
 
+\section*{C. Randomized Halving}
+\subsection*{1. Psuedo code}
+
+\begin{algorithm}
+  \caption{Randomized Halving}\label{euclid}
+  \begin{algorithmic}[1]
+    \State{} $ H_{1} \gets H$
+    \For{t $ \gets{} $ 1 to T} 
+    \State{} $RECEIVE(x_{t})$
+    \State{} \( r_{t} \gets{} \frac{\sum_{i:y_{t,i} = 1} 1}{\mid H_{t} \mid}  \)
+    \State{} \( p_{t} \gets{} 1 \)
+    \If{\( r_{t} \le \frac{3}{4} \)} 
+    \State{} \( p_{t} \gets{} [\frac{1}{2} \log_2{\frac{1}{1- r_{t}}} ] \)
+    \EndIf{}
+    \State{} \( \hat{y_{t}} \gets{} GetRandomNumberWithProbability([1, 0], [p_{t}, 1-p_{t}]) \)
+    \State{} $RECEIVE(y_{t})$
+    \If{\( \hat{y_{t}} \neq y_{t} \)} 
+    \State{} \( H_{t+1}  \gets{} \{ c \in H_{t}: c(x_{t}) = y_{t} \}\)
+    \EndIf{}
+    \EndFor{}
+    \Return{} $H_{T+1} $
+  \end{algorithmic}
+\end{algorithm}
+
+\subsection*{2. Prove \( \forall t \geq 1, E[\mu] \le \frac{\phi_{t} - \phi_{t+1}}{2} \)}
+\begin{description}
+  \item{Given:} Potential function: \( \phi_{t} = \log_2{\mid H_{t} \mid} \) and \( \mu_{t} = 1_{y_{t} \neq \hat{y_{t}} } \)
+  \item{Proof:} \\
+    We are only considering the case when the predicted value \( \hat{y_{t}} \) is not equal to the received value \( y_{t} \).
+    The value of expectation can be written as 
+    \begin{align*}
+      E[\mu_{t}] =& p_{t}*1 + (1 - p_{t})*0 \\
+      =& p_{t}*1
+    \end{align*}
+
+    The probability of predicting 1 by the randomized algorithm is the probability of making a mistake since we are only considering the cases in which we make mistakes \(  ( \mu_{t} = 1_{y_{t} \neq \hat{y_{t}}})\)
+
+    Therefore, 
+    \begin{align*}
+      E[\mu_{t}] =& p_{t}\\
+      =& [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}} ] 1_{r_{t} \le \frac{3}{4}} + 1_{r_{t} > \frac{3}{4}} \\
+      \le & [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}}]
+    \end{align*}
+    Since, the Expectation will be 1 when \( r_{t} > \frac{3}{4} \) which corresponds to the maximum expectation here, we can upper bound the expectation by using \( r_{t} \le \frac{3}{4} \) as \( [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}} ] \) equals 1 when \( r_{t} = \frac{3}{4} \)
+
+    Let \( E_{1}, E_{0}, E_{t} \) denote the number of experts predicting 1, 0 and the total number of experts in a round t.
+
+    \begin{align*}
+      E[\mu_{t}] \le & [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}}] \\
+      = & [ \frac{\log_2{\frac{1}{1 - r_{t}}}}{2}] \\
+      = & [ \frac{\log_2{\frac{1}{1 - r_{t}}}}{2}] \\
+      = & [ \frac{\log_2{\frac{1}{1 - \frac{\mid E_{1} \mid}{\mid H_{t} \mid}}}}{2}] \\
+      = & [ \frac{\log_2{\frac{\mid H_{t} \mid}{\mid H_{t} \mid - \mid E_{1} \mid}}}{2}] \\
+      = & [ \frac{\log_2{\frac{\mid H_{t} \mid}{\mid E_{0} \mid}}}{2}] \\
+      = & [ \frac{\log_2{\mid H_{t} \mid} - \log_2{\mid E_{0} \mid}}{2}] \\
+      = & [ \frac{\log_2{\mid H_{t} \mid} - \log_2{\mid H_{t+1} \mid}}{2}] \\
+      = & [ \frac{\phi_{t} - \phi_{t+1}}{2}] \\
+      \therefore E[\mu_{t}] \le &  \frac{\phi_{t} - \phi_{t+1}}{2}
+    \end{align*}
+\end{description}
+
+\subsection*{3. Expected number of mistakes.}
+\begin{description}
+  \item{Given:} N be the total number of experts at the beginnning of the iterations (denoted by \( H_{1} \)). Since we are considering a relizable scenario at the end of the algorithm the number of experts should be atleast one.  So \( H_{T} = 1 \). 
+  \item{To Prove:} The expected number of mistakes made by Randomized Halving is at most \( \frac{1}{2}\log_2{N} \)
+  \item{Proof:} \\
+    Lets consider the total expectation of mistakes of the Randomized Halving algorithm over T iterations.
+    \begin{align*}
+      E[\mu_{T}] \le & \sum_{t=1}^{T} \frac{\phi_{t} - \phi_{t+1}}{2} \\
+      \le & \frac{(\phi_{H_{1}} - \phi_{H_{2}}) + (\phi_{H_{2}} - \phi_{H_{3}})  \cdots (\phi_{H_{T-2}} - \phi_{H_{T-1}}) + (\phi_{H_{T-1}} - \phi_{H_{T}}) \ }{2} \\
+      \le & \frac{\phi_{H_{1}} - \phi_{H_{T}}}{2} \\
+      \le & \frac{\phi_{N} - \phi_{T}}{2} \\
+      \le & \frac{\phi_{N}}{2} \\
+      \le & \frac{1}{2}\log_2{N}
+    \end{align*}
+    Hence proved.
+
+    Here \( \phi_{T} = 0 \) because the number of experts at line T is 1.  Therefore, \( \log \) of T will be zero.
+\end{description}
+
+\subsection*{4. [Bonus Question]}
+As we have seen in the previous answer, the mistakes made by the randomized algorithm is bounded by \( \frac{1}{2}\log_2{N} \).  This upper bound is dependent only on the number of initial experts, N.  Therefore any randomized algorithm that is dependent on the opinion of the experts to generate its predictions will have similar upper bound of \( \lfloor \frac{1}{2}\log_2{N} \rfloor \).  The floor function is used as mistakes are natural numbers.
+
 \section*{A. Boosting-type Algorithm}
 \subsection*{1. Bound of \( 1_{u \le 0} \) Proof of convexity and differentiability}
 \begin{description}
@@ -245,7 +328,6 @@ by removing the constants and negative signs.  This gives us a (p-1) monic polyn
 This can be solved using Newtons' method to find the value of step size $\eta$
 
 
-
 \subsubsection*{Generalization Bound}
 A family of functions (H) taking values in {+1, -1} with VC-dimension d for any $ \delta > 0 $ with probability atleast $ 1 - \delta $, it holds for any $h \in conv(H)$:
 \begin{align*}
@@ -256,87 +338,146 @@ The above expression is true for all ensemble methods (Refer Corollary 6.2, page
 
 \newpage
 
-\section*{C. Randomized Halving}
-\subsection*{1. Psuedo code}
-
-\begin{algorithm}
-  \caption{Randomized Halving}\label{euclid}
-  \begin{algorithmic}[1]
-    \State{} $ H_{1} \gets H$
-    \For{t $ \gets{} $ 1 to T} 
-    \State{} $RECEIVE(x_{t})$
-    \State{} \( r_{t} \gets{} \frac{\sum_{i:y_{t,i} = 1} 1}{\mid H_{t} \mid}  \)
-    \State{} \( p_{t} \gets{} 1 \)
-    \If{\( r_{t} \le \frac{3}{4} \)} 
-    \State{} \( p_{t} \gets{} [\frac{1}{2} \log_2{\frac{1}{1- r_{t}}} ] \)
-    \EndIf{}
-    \State{} \( \hat{y_{t}} \gets{} GetRandomNumberWithProbability([1, 0], [p_{t}, 1-p_{t}]) \)
-    \State{} $RECEIVE(y_{t})$
-    \If{\( \hat{y_{t}} \neq y_{t} \)} 
-    \State{} \( H_{t+1}  \gets{} \{ c \in H_{t}: c(x_{t}) = y_{t} \}\)
-    \EndIf{}
-    \EndFor{}
-    \Return{} $H_{T+1} $
-  \end{algorithmic}
-\end{algorithm}
-
-\subsection*{2. Prove \( \forall t \geq 1, E[\mu] \le \frac{\phi_{t} - \phi_{t+1}}{2} \)}
+\section*{L2 regularized Maxent}
+\subsection*{1}
+\subsection*{2}
 \begin{description}
-  \item{Given:} Potential function: \( \phi_{t} = \log_2{\mid H_{t} \mid} \) and \( \mu_{t} = 1_{y_{t} \neq \hat{y_{t}} } \)
+  \item{To Prove:} $\left\Vert \hat{w}-w_{D}\right\Vert _{2}\leq\frac{1}{\lambda}\left\Vert E_{x\sim S}\left[\Phi\left(x\right)\right]-E_{x\sim D}\left[\Phi\left(x\right)\right]\right\Vert _{2}$
+  \item{Proof:}
+    We know that when $ \hat{w}\neq w_{D} $:
+    \begin{align*}
+      L_{Q}(w)= & E_{x\sim Q}\left[-\log\left(p_{w}\left(x\right)\right)\right] \\
+      = & -E_{x\sim Q}\left[\log\left(\frac{\exp\left(w.\Phi\left(x\right)\right)}{Z}\right)\right] \\
+      = &-E_{x\sim Q}\left[w.\Phi\left(x\right)-\log\left(Z\right)\right] \\
+      = & \log\left(Z\right)-w.E_{x\sim Q}\left[\Phi\left(x\right)\right] \\
+      = & q\left(w\right)-w.E_{x\sim Q}\left[\Phi\left(x\right)\right]
+    \end{align*}
+    by substituting $ q(w)=\log(Z)$
+    \begin{align*}
+      J_{S}(w) = & \frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2}+L_{S}(w) \\
+      = & \frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2}+q\left(w\right)-w.E_{x\sim S}\left[\Phi\left(x\right)\right] \\
+      J_{D}(w)= & \frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2}+L_{D}(w) \\
+      = & \frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2}+q\left(w\right)-w.E_{x\sim D}\left[\Phi\left(x\right)\right] \\
+    \end{align*}
+
+    Taking first derivative and equating to zero:
+    \begin{align*}
+      {\left[\frac{dJ_{S}(w)}{dw}\right]} {w=\hat{w}}=0\Rightarrow\lambda\hat{w}+\nabla q(\hat{w})-E_{x\sim S}\left[\Phi\left(x\right)\right] = & 0 \\
+      {\left[\frac{dJ_{D}(w)}{dw}\right]}_{w=w_{D}}=0\Rightarrow\lambda w_{D}+\nabla q(w_{D})-E_{x\sim D}\left[\Phi\left(x\right)\right]= & 0 \\
+    \end{align*}
+
+    From the above equations:
+    \begin{align*}
+      \lambda\left(w_{D}-\hat{w}\right) = & \left(E_{x\sim D}\left[\Phi\left(x\right)\right]-E_{x\sim S}\left[\Phi\left(x\right)\right]\right)-\left(\nabla q(w_{D})-\nabla q(\hat{w})\right) \\
+      \lambda\left\Vert w_{D}-\hat{w}\right\Vert _{2}^{2}= &\left(w_{D}-\hat{w}\right)\cdot\left(E_{x\sim D}\left[\Phi\left(x\right)\right]-E_{x\sim S}\left[\Phi\left(x\right)\right]\right)-\left(w_{D}-\hat{w}\right)\cdot\left(\nabla q(w_{D})-\nabla q(\hat{w})\right) \\
+    \end{align*}
+    Since Z (sum of components) is a convex function of w, log (z) is also a convex function. Using the identity
+
+    \begin{align*}
+      \left(\nabla q(w_{1})-\nabla q(w_{2})\right)\cdot\left(w_{1}-w_{2}\right) \geq &  0
+    \end{align*}
+     we have:
+     \begin{align*}
+       \lambda\left\Vert w_{D}-\hat{w}\right\Vert _{2}^{2} \leq & \left(w_{D}-\hat{w}\right)\cdot\left(E_{x\sim D}\left[\Phi\left(x\right)\right]-E_{x\sim S}\left[\Phi\left(x\right)\right]\right) \\ 
+       = & \left(\hat{w}-w_{D}\right)\cdot\left(E_{x\sim S}\left[\Phi\left(x\right)\right]-E_{x\sim D}\left[\Phi\left(x\right)\right]\right) \\
+       \lambda\left\Vert \hat{w}-w_{D}\right\Vert _{2}^{2}\leq & \left\Vert \hat{w}-w_{D}\right\Vert _{2}\cdot\left\Vert E_{x\sim S}\left[\Phi\left(x\right)\right]-E_{x\sim D}\left[\Phi\left(x\right)\right]\right\Vert _{2}
+     \end{align*}
+      where we use the Cauchy-Schwarz inequality and that $\left\Vert \hat{w}-w_{D}\right\Vert _{2}^{2}=\left\Vert w_{D}-\hat{w}\right\Vert _{2}^{2}$. Divide both sides by using $\lambda\left(w_{D}-\hat{w}\right)$
+      \begin{align*}
+        \left\Vert \hat{w}-w_{D}\right\Vert _{2} \leq & \frac{1}{\lambda}\left\Vert E_{x\sim S}\left[\Phi\left(x\right)\right]-E_{x\sim D}\left[\Phi\left(x\right)\right]\right\Vert _{2}
+      \end{align*}
+\end{description}
+
+\subsection*{3}
+\begin{description}
+  \item{To prove:} $ L_{D}(\hat{w})-L_{D}(w_{D})\leq\left(\hat{w}-w_{D}\right)\cdot\left(E_{x\sim S}\left[\Phi\left(x\right)\right]-E_{x\sim D}\left[\Phi\left(x\right)\right]\right)+\frac{\lambda}{2}\left\Vert w_{D}\right\Vert _{2}^{2}-\frac{\lambda}{2}\left\Vert \hat{w}\right\Vert _{2}^{2}$
   \item{Proof:} \\
-    We are only considering the case when the predicted value \( \hat{y_{t}} \) is not equal to the received value \( y_{t} \).
-    The value of expectation can be written as 
+    We know that:
     \begin{align*}
-      E[\mu_{t}] =& p_{t}*1 + (1 - p_{t})*0 \\
-      =& p_{t}*1
+      J_{D}(w)= & \frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2}+L_{D}(w)=U_{D}\left(w\right)+L_{D}(w)
     \end{align*}
-
-    The probability of predicting 1 by the randomized algorithm is the probability of making a mistake since we are only considering the cases in which we make mistakes \(  ( \mu_{t} = 1_{y_{t} \neq \hat{y_{t}}})\)
-
-    Therefore, 
+    where
     \begin{align*}
-      E[\mu_{t}] =& p_{t}\\
-      =& [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}} ] 1_{r_{t} \le \frac{3}{4}} + 1_{r_{t} > \frac{3}{4}} \\
-      \le & [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}}]
+      U_{D}(w)=\frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2}
     \end{align*}
-    Since, the Expectation will be 1 when \( r_{t} > \frac{3}{4} \) which corresponds to the maximum expectation here, we can upper bound the expectation by using \( r_{t} \le \frac{3}{4} \) as \( [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}} ] \) equals 1 when \( r_{t} = \frac{3}{4} \)
-
-    Let \( E_{1}, E_{0}, E_{t} \) denote the number of experts predicting 1, 0 and the total number of experts in a round t.
-
+    Also $ \hat{w}$ minimizes $ J_{D} $.  $ \therefore U_{D}\left(\hat{w}\right)+L_{D}(\hat{w})\leq U_{D}\left(w\right)+L_{D}(w)$
     \begin{align*}
-      E[\mu_{t}] \le & [\frac{1}{2} \log_2{\frac{1}{1 - r_{t}}}] \\
-      = & [ \frac{\log_2{\frac{1}{1 - r_{t}}}}{2}] \\
-      = & [ \frac{\log_2{\frac{1}{1 - r_{t}}}}{2}] \\
-      = & [ \frac{\log_2{\frac{1}{1 - \frac{\mid E_{1} \mid}{\mid H_{t} \mid}}}}{2}] \\
-      = & [ \frac{\log_2{\frac{\mid H_{t} \mid}{\mid H_{t} \mid - \mid E_{1} \mid}}}{2}] \\
-      = & [ \frac{\log_2{\frac{\mid H_{t} \mid}{\mid E_{0} \mid}}}{2}] \\
-      = & [ \frac{\log_2{\mid H_{t} \mid} - \log_2{\mid E_{0} \mid}}{2}] \\
-      = & [ \frac{\log_2{\mid H_{t} \mid} - \log_2{\mid H_{t+1} \mid}}{2}] \\
-      = & [ \frac{\phi_{t} - \phi_{t+1}}{2}] \\
-      \therefore E[\mu_{t}] \le &  \frac{\phi_{t} - \phi_{t+1}}{2}
+      L_{D}(\hat{w})\leq & L_{D}(w)+U_{D}\left(w\right)-U_{D}\left(\hat{w}\right)=L_{D}(w)+U\left(-w\right)-U\left(-\hat{w}\right)+\left(w-\hat{w}\right)\cdot E_{x\sim D}\left[\Phi(x)\right] \\
+      \leq & L_{D}(w)+U_{D}\left(w\right)-U_{D}\left(\hat{w}\right)+\left(w-\hat{w}\right)\cdot\left(E_{x\sim D}\left[\Phi(x)\right]-E_{x\sim S}\left[\Phi(x)\right]\right) \\
+    \end{align*}
+    The second equation can be obtained by shifting.
+
+    Using, $w=w_{D}$ and $U_{D}(w)=\frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2}$,
+    \begin{align*}
+      L_{D}(\hat{w}) \leq & L_{D}(w_{D})+\frac{\lambda}{2}\left\Vert w_{D}\right\Vert _{2}^{2}-\frac{\lambda}{2}\left\Vert \hat{w}\right\Vert _{2}^{2}+\left(w_{D}-\hat{w}\right)\cdot\left(E_{x\sim D}\left[\Phi(x)\right]-E_{x\sim S}\left[\Phi(x)\right]\right) \\
+      L_{D}(\hat{w})-L_{D}(w_{D}) \leq & \left(\hat{w}-w_{D}\right)\cdot\left(E_{x\sim S}\left[\Phi(x)\right]-E_{x\sim D}\left[\Phi(x)\right]\right)+\frac{\lambda}{2}\left\Vert w_{D}\right\Vert _{2}^{2}-\frac{\lambda}{2}\left\Vert \hat{w}\right\Vert _{2}^{2} \\
     \end{align*}
 \end{description}
 
-\subsection*{3. Expected number of mistakes.}
+\subsection*{4}
 \begin{description}
-  \item{Given:} N be the total number of experts at the beginnning of the iterations (denoted by \( H_{1} \)). Since we are considering a relizable scenario at the end of the algorithm the number of experts should be atleast one.  So \( H_{T} = 1 \). 
-  \item{To Prove:} The expected number of mistakes made by Randomized Halving is at most \( \frac{1}{2}\log_2{N} \)
-  \item{Proof:} \\
-    Lets consider the total expectation of mistakes of the Randomized Halving algorithm over T iterations.
+  \item{To Prove} \( L_{D}(\hat{w})\leq\frac{1}{\lambda}\left\Vert E_{x\sim S}\left[\Phi\left(x\right)\right]-E_{x\sim D}\left[\Phi\left(x\right)\right]\right\Vert _{2}^{2}+L_{D}(w)+\frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2} \)
+  \item{Proof}
+    We know that, 
+    \begin{equation*}
+      L_{D}(\hat{w})-L_{D}(w_{D}) \leq  \left(\hat{w}-w_{D}\right)\cdot\left(E_{x\sim S}\left[\Phi(x)\right]-E_{x\sim D}\left[\Phi(x)\right]\right)+\frac{\lambda}{2}\left\Vert w_{D}\right\Vert _{2}^{2}-\frac{\lambda}{2}\left\Vert \hat{w}\right\Vert _{2}^{2} \\
+    \end{equation*}
+    and
+    \begin{equation*}
+      \left\Vert \hat{w}-w_{D}\right\Vert _{2}\leq\frac{1}{\lambda}\left\Vert E_{x\sim S}\left[\Phi\left(x\right)\right]-E_{x\sim D}\left[\Phi\left(x\right)\right]\right\Vert _{2}
+    \end{equation*}
+    By using Cauchy-Shwartz inequality, 
     \begin{align*}
-      E[\mu_{T}] \le & \sum_{t=1}^{T} \frac{\phi_{t} - \phi_{t+1}}{2} \\
-      \le & \frac{(\phi_{H_{1}} - \phi_{H_{2}}) + (\phi_{H_{2}} - \phi_{H_{3}})  \cdots (\phi_{H_{T-2}} - \phi_{H_{T-1}}) + (\phi_{H_{T-1}} - \phi_{H_{T}}) \ }{2} \\
-      \le & \frac{\phi_{H_{1}} - \phi_{H_{T}}}{2} \\
-      \le & \frac{\phi_{N} - \phi_{T}}{2} \\
-      \le & \frac{\phi_{N}}{2} \\
-      \le & \frac{1}{2}\log_2{N}
+      \left(\hat{w}-w_{D}\right)\cdot\left(E_{x\sim S}\left[\Phi(x)\right]-E_{x\sim D}\left[\Phi(x)\right]\right)\leq\left\Vert \hat{w}-w_{D}\right\Vert _{2}\cdot\left\Vert E_{x\sim S}\left[\Phi(x)\right]-E_{x\sim D}\left[\Phi(x)\right]\right\Vert _{2}
     \end{align*}
-    Hence proved.
+    Substituting:
+    \begin{align*}
+      L_{D}(\hat{w})-L_{D}(w_{D}) \leq & \left\Vert \hat{w}-w_{D}\right\Vert _{2}\cdot\left\Vert E_{x\sim S}\left[\Phi(x)\right]-E_{x\sim D}\left[\Phi(x)\right]\right\Vert _{2}+\frac{\lambda}{2}\left\Vert w_{D}\right\Vert _{2}^{2}-\frac{\lambda}{2}\left\Vert \hat{w}\right\Vert _{2}^{2} \\
+      \leq & \frac{1}{\lambda}\left\Vert E_{x\sim S}\left[\Phi(x)\right]-E_{x\sim D}\left[\Phi(x)\right]\right\Vert _{2}^{2}+\frac{\lambda}{2}\left\Vert w_{D}\right\Vert _{2}^{2}-\frac{\lambda}{2}\left\Vert \hat{w}\right\Vert _{2}^{2} \\
+      \leq & \frac{1}{\lambda}\left\Vert E_{x\sim S}\left[\Phi(x)\right]-E_{x\sim D}\left[\Phi(x)\right]\right\Vert _{2}^{2}+\frac{\lambda}{2}\left\Vert w_{D}\right\Vert _{2}^{2} \\
+    \end{align*}
+    Since $ w_{D} $ minimizes $J_{D}(w)$, we know ${\left[J_{D}\right]}_{w=w_{D}}\leq {\left[J_{D}\right]}{\mathrm{arbitrary}\mbox{w}}$\\
+    
+    $\therefore \frac{\lambda}{2}\left\Vert w_{D}\right\Vert _{2}^{2}+L_{D}(w_{D})\leq\frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2}+L_{D}(w)$
 
-    Here \( \phi_{T} = 0 \) because the number of experts at line T is 1.  Therefore, \( \log \) of T will be zero.
+    Using the above equations
+    \begin{align*}
+      L_{D}(\hat{w})-L_{D}(w) \leq & \frac{1}{\lambda}\left\Vert E_{x\sim S}\left[\Phi(x)\right]-E_{x\sim D}\left[\Phi(x)\right]\right\Vert _{2}^{2}+\frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2} \\
+      L_{D}(\hat{w}) \leq & \frac{1}{\lambda}\left\Vert E_{x\sim S}\left[\Phi(x)\right]-E_{x\sim D}\left[\Phi(x)\right]\right\Vert _{2}^{2}+L_{D}(w)+\frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2}\\
+    \end{align*}
+
+    This proves the given equation.
 \end{description}
 
-\subsection*{4. [Bonus Question]}
-As we have seen in the previous answer, the mistakes made by the randomized algorithm is bounded by \( \frac{1}{2}\log_2{N} \).  This upper bound is dependent only on the number of initial experts, N.  Therefore any randomized algorithm that is dependent on the opinion of the experts to generate its predictions will have similar upper bound of \( \lfloor \frac{1}{2}\log_2{N} \rfloor \).  The floor function is used as mistakes are natural numbers.
+\subsection*{5}
+\begin{description}
+  \item{Given: } $\delta > 0$ 
+  \item{To Prove:} $ \forall \delta > 0; \mathcal{L}_{D}(\hat{w}) \le \inf_{w \in \mathbb{R}^{N}}\mathcal{L}_{D}(w)+\frac{\lambda}{2} \left\Vert w\right\Vert _{2}^{2}+\frac{2r^{2}}{\lambda m}{\left(1+\sqrt{\log\left(\frac{1}{\delta}\right)}\right)}^{2}$ is valid with probability $ 1 - \delta $
+  \item{Proof:} \\
+    We have already proved that $ \forall \delta $ with probability $ 1 - \delta $
+    \begin{align*}
+      {\left\Vert E_{x\sim D}\left[\Phi(x)\right]-E_{x\sim S}\left[\Phi(x)\right]\right\Vert}_{2} \leq & \sqrt{\frac{2r^{2}}{m}}\left(1+\sqrt{\log\left(\frac{1}{\delta}\right)}\right) \\
+    \end{align*}
+
+    Also 
+    \begin{align*}
+      \mathcal{L}_{D}(\hat{w})\leq & \frac{1}{\lambda}{\left\Vert E_{x\sim S}\left[\Phi(x)\right]-E_{x\sim D}\left[\Phi(x)\right]\right\Vert}_{2}^{2} + \mathcal{L}_{D}(w)+\frac{\lambda}{2}{\left\Vert w\right\Vert}_{2}^{2} \\
+    \end{align*}
+
+    Using the above two equations
+    \begin{align*}
+      L_{D}(\hat{w})\leq & \frac{1}{\lambda}\left\Vert E_{x\sim S}\left[\Phi(x)\right]-E_{x\sim D}\left[\Phi(x)\right]\right\Vert _{2}^{2}+L_{D}(w)+\frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2} \\
+      \leq & \frac{1}{\lambda}{\left(\sqrt{\frac{2r^{2}}{m}}\left(1+\sqrt{\log\left(\frac{1}{\delta}\right)}\right)\right)}^{2}+L_{D}(w)+\frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2} \\
+      = & L_{D}(w)+\frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2}+\frac{2r^{2}}{\lambda m}{\left(1+\sqrt{\log\left(\frac{1}{\delta}\right)}\right)}^{2} \\
+    \end{align*}
+
+    Since $ \forall w \in \mathbb{R}^{N} $,  $ \inf_{w \in \mathbb{R}^{N}}\mathcal{L}_{D}(w)\leq \mathcal{L}_{D}(w) $ we can obtain a tight upper bound by using this.
+
+    \begin{align*}
+      L_{D}(\hat{w})\leq \inf_{w\in\mathbb{R}^{N}}L_{D}(w)+\frac{\lambda}{2}\left\Vert w\right\Vert _{2}^{2}+\frac{2r^{2}}{\lambda m}{\left(1+\sqrt{\log\left(\frac{1}{\delta}\right)}\right)}^{2} \\
+    \end{align*}
+
+    Hence Proved.
+\end{description}
 
 \end{document}
