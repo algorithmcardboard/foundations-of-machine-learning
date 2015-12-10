@@ -20,7 +20,7 @@
 \newpage
 
 \section*{A. Boosting-type Algorithm}
-\subsection*{1. Proof of convexity and differentiability}
+\subsection*{1. Bound of \( 1_{u \le 0} \) Proof of convexity and differentiability}
 \begin{description}
   \item{Given: } \( \phi_{p}(u) = \max( {(1 + u)}^{p}, 0) \)
   \item{To prove:} 1. Function \( \phi_{p}(u) \) is convex and differentiable \\ And 2. \( \forall u \in \mathbb{R} \textrm{ and } p > 1,  1_{u \le 0} \le \phi_{p}(-u) \)
@@ -30,14 +30,32 @@
     When \( u = 0\)
     \begin{align*}
         1_{u \le 0} = &1 \\
-        \phi_{p}(u) = & \max( {(1 - 0)}^{p}, 0) = 1 = 1_{u \le 0}
+        \phi_{p}(-u) = & \max( {(1 - 0)}^{p}, 0) = 1 = 1_{u \le 0}
     \end{align*}
 
     When \( u < 0\)
     \begin{align*}
         1_{u \le 0} = &1 \\
-        \phi_{p}(u) = & \max( {(1 - u)}^{p}, 0) = 1 = 1_{u \le 0}
+        \phi_{p}(-u) = & \max( {(1 - u)}^{p}, 0)  \\
+        =& \max( {(1 + u)}^{p}, 0)  \textrm{Since u is negative, -u is positive} \\
+        > & 1 \\
+        > & 1_{u \le 0}
     \end{align*}
+
+    When \( u > 0 \)
+    \begin{align*}
+        1_{u \le 0} = & 0 \\
+        \phi_{p}(-u) = & \max( {(1 - u)}^{p}, 0)  \\
+        = & 
+        \begin{cases}
+          0, & \textrm{if p is odd} \\
+          {(1-u)}^p, & \textrm{if p is positive}
+        \end{cases} \\
+        \ge & 0 \;\;\;\; \forall \;\;\;\; \mathbb{R}
+        \ge 1_{u \le 0}
+    \end{align*}
+
+    Hence proved
   \item{Proof of Convexity and Differentiability:}
     The function can be written as a piecewise function based on the value of p:
 
